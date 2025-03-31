@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E75CB3A0-20EE-F365-D3C6-895163C6A4A2" name="Movie">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-31 10:05:37 UTC</createdTime>
+<generatorID>96A9D50E-7AA1-1C61-DE2A-490A2C1FC533</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Media_ID" id="FAB5AF54-5D97-5F52-984C-8089F313E3D8">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-31 10:05:37 UTC</createdTime>
+<comment><![CDATA[Exemplar Identifier]]></comment>
+<generatorID>BB549652-0799-F6F5-B13E-F539A84A9882</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B4A511C1-4CB7-4650-8E29-4AB59B0EA7C3" referredColumn="733FB7C1-28E7-2ADB-7789-8166A3286EAB"/>
+</associations>
+</Column>
+<Column name="Format" id="1E5D69F7-01B0-F723-6ADB-3E2CA55F25B2">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-31 10:05:37 UTC</createdTime>
+<generatorID>B945F180-FC98-D8B0-9730-DBBE05571FA3</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Runtime" id="582B396D-1E1C-9358-300F-1A37C6D41D5B">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-31 10:05:37 UTC</createdTime>
+<generatorID>65E7B557-AD41-3564-F942-FFB7379AAB0E</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="49B63E0A-C545-788D-745C-ECD2C4A6956F" name="Movie_PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-31 10:05:37 UTC</createdTime>
+<generatorID>15EF7138-F7A1-2E91-6B74-D4DD70EC8F4E</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FAB5AF54-5D97-5F52-984C-8089F313E3D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B50D6F6-EC17-BC2C-E9E7-C3370683FFD8" name="Movie_Media_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-31 10:05:37 UTC</createdTime>
+<generatorID>AC0C9953-0009-D9C8-7DC2-078A061077AB</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FAB5AF54-5D97-5F52-984C-8089F313E3D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

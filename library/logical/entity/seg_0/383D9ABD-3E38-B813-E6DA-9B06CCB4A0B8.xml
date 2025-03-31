@@ -4,7 +4,7 @@
 <createdTime>2025-03-22 00:16:07 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
-<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+<item key="326CAE60-A7D2-7EC6-FFD0-0B6C03B41569" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,12 +15,24 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Rental_ID" id="F3ED9EEA-CA12-FA31-E0D6-3A8B74C23A80">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-31 09:58:53 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="326CAE60-A7D2-7EC6-FFD0-0B6C03B41569" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="Start_Date" id="86BBFB1A-80A7-ECFD-D723-773CCE665F27">
 <createdBy>maker</createdBy>
 <createdTime>2025-03-22 00:27:57 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
-<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+<item key="326CAE60-A7D2-7EC6-FFD0-0B6C03B41569" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,9 +44,11 @@
 <createdTime>2025-03-22 00:28:14 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
-<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+<item key="326CAE60-A7D2-7EC6-FFD0-0B6C03B41569" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Copy_ID" id="62C1AB02-C9B2-5CF8-5E66-649C56022E2A">
@@ -43,7 +57,7 @@
 <generatorID>590355EB-1BD9-D8DB-F721-72F455A1A3AD</generatorID>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
-<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+<item key="326CAE60-A7D2-7EC6-FFD0-0B6C03B41569" value="true"/>
 </engineerTo>
 <referedAttribute>96D665A1-C73C-64FC-5CB1-E0C6C5D347F5</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -58,7 +72,7 @@
 <generatorID>590355EB-1BD9-D8DB-F721-72F455A1A3AD</generatorID>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
-<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+<item key="326CAE60-A7D2-7EC6-FFD0-0B6C03B41569" value="true"/>
 </engineerTo>
 <referedAttribute>A6DC2C88-0E95-21A8-865E-BC02D9EAB948</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -72,7 +86,7 @@
 <generatorID>B927163B-B42A-60E7-9382-CABEBB38D69A</generatorID>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
-<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+<item key="326CAE60-A7D2-7EC6-FFD0-0B6C03B41569" value="true"/>
 </engineerTo>
 <referedAttribute>439DB462-484A-6072-C7D4-D82AFD236065</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -80,19 +94,19 @@
 <logicalDatatype>LOGDT032</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Reservation_ID" id="95F35E7F-C363-5BC8-006E-6CCBE70EF7CF">
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E394B29B-DCC5-B74E-7553-68C996AD2EBE" name="Rental PK">
 <createdBy>maker</createdBy>
-<createdTime>2025-03-28 12:15:36 UTC</createdTime>
-<generatorID>E48C4551-43DD-7777-AF5C-BE9EE6A4693F</generatorID>
+<createdTime>2025-03-31 09:59:05 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
-<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+<item key="326CAE60-A7D2-7EC6-FFD0-0B6C03B41569" value="true"/>
 </engineerTo>
-<referedAttribute>E4CD341E-EBD8-21C0-3FF5-A3ABFDB8DF07</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT032</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-</attributes>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F3ED9EEA-CA12-FA31-E0D6-3A8B74C23A80</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

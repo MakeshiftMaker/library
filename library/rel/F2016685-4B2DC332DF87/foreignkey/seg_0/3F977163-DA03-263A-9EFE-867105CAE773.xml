@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3F977163-DA03-263A-9EFE-867105CAE773" containerWithKeyObject="6C9B77DC-F17B-43C6-D29B-D46CBF700209" localFKIndex="F925F0BD-8831-B2F3-D87E-3E2802C14D05" name="Media_FSK_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-31 10:05:37 UTC</createdTime>
+<generatorID>FA5F7DAC-76CE-6808-75CC-E19DE50B33A0</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<referredTableLongName>FSK</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1742B248-8568-0E0D-F97E-FD56EB62FE3B</referredTableID>
+<keyObject>8C0A7FA0-21EB-18CB-B835-74F5C3D31297</keyObject>
+<referredKeyID>8C0A7FA0-21EB-18CB-B835-74F5C3D31297</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>FSK_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
