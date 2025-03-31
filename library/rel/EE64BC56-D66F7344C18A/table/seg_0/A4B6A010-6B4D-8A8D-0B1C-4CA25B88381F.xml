@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A4B6A010-6B4D-8A8D-0B1C-4CA25B88381F" name="Copy">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>048E5B8C-A6B9-08CB-2FD9-12921F19884E</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Copy_ID" id="04F5779B-8A83-F372-F646-C1EF57D7DAF2">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>96D665A1-C73C-64FC-5CB1-E0C6C5D347F5</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Media_Media_ID" id="5CE3586A-60FC-3217-C7AD-0386BFD6E02C">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<comment><![CDATA[Exemplar Identifier]]></comment>
+<generatorID>A6DC2C88-0E95-21A8-865E-BC02D9EAB948</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BBEFDF5E-50E4-3DBD-C245-F32D48DC3CBB" referredColumn="49BFF0C6-1E38-3F5D-2383-DA4816A9D1DC"/>
+</associations>
+</Column>
+<Column name="Available" id="C602763C-4031-D49D-21EE-B18ECE919FA3">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>E8F1768D-FC2C-6A01-A50F-9CBBCE7AF548</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Condition" id="9C01EFCD-204E-36E0-21AC-A33A4CFCE1FD">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>B976BD37-6D18-7EDA-D45E-DDC277C67AB3</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Barcode" id="F423DF2C-66EF-291A-9903-B153AB2D1BE0">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>B8EC1FAD-0D98-CDE3-B6FB-4BAB6ECDDB58</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1E593A36-5714-788C-B6A3-C3EDAA9E5D47" name="Copy_PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>139FAC3F-684D-CBCB-F7EB-0A4879A79B9B</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04F5779B-8A83-F372-F646-C1EF57D7DAF2"/>
+<colUsage columnID="5CE3586A-60FC-3217-C7AD-0386BFD6E02C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6B8976E-733D-BDC1-0902-AE6027957BC6" name="Copy_Media_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>89BB64A7-C956-435B-E1F6-253A45E2CEF4</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CE3586A-60FC-3217-C7AD-0386BFD6E02C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

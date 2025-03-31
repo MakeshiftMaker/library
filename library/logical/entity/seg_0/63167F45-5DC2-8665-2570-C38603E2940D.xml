@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="63167F45-5DC2-8665-2570-C38603E2940D" name="Country">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-18 14:43:31 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Country_ID" id="3A0A581A-1BD6-3313-F096-9EA81AC776DD">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-18 14:43:42 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Country_Name" id="E4072779-3B37-246A-8782-B09844B88CBD">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 01:10:52 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5ADC9F4E-7735-85A9-1CE5-61CFCFE179BA" name="Country PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-18 14:43:49 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3A0A581A-1BD6-3313-F096-9EA81AC776DD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="383D9ABD-3E38-B813-E6DA-9B06CCB4A0B8" name="Rental">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 00:16:07 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Start_Date" id="86BBFB1A-80A7-ECFD-D723-773CCE665F27">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 00:27:57 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="End_Date" id="A47C58C3-F6EC-5699-ABF8-420553820092">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 00:28:14 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Copy_ID" id="62C1AB02-C9B2-5CF8-5E66-649C56022E2A">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 00:47:28 UTC</createdTime>
+<generatorID>590355EB-1BD9-D8DB-F721-72F455A1A3AD</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+</engineerTo>
+<referedAttribute>96D665A1-C73C-64FC-5CB1-E0C6C5D347F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Media_ID" id="81242677-6565-0FBA-CBC3-11A238AF8E9E">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 00:47:28 UTC</createdTime>
+<comment><![CDATA[Exemplar Identifier]]></comment>
+<generatorID>590355EB-1BD9-D8DB-F721-72F455A1A3AD</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+</engineerTo>
+<referedAttribute>A6DC2C88-0E95-21A8-865E-BC02D9EAB948</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Customer_ID" id="DBFAE767-4F8B-D688-7647-CF2200FE78D3">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 00:47:47 UTC</createdTime>
+<generatorID>B927163B-B42A-60E7-9382-CABEBB38D69A</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+</engineerTo>
+<referedAttribute>439DB462-484A-6072-C7D4-D82AFD236065</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Reservation_ID" id="95F35E7F-C363-5BC8-006E-6CCBE70EF7CF">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 12:15:36 UTC</createdTime>
+<generatorID>E48C4551-43DD-7777-AF5C-BE9EE6A4693F</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+</engineerTo>
+<referedAttribute>E4CD341E-EBD8-21C0-3FF5-A3ABFDB8DF07</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

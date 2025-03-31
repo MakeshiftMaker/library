@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Reservation_Media" directorySegmentName="seg_0" id="6CC9E7CA-8C9A-91F7-997E-507DAE0C4CAE">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 12:14:56 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+</engineerTo>
+<sourcePk>15EF7138-F7A1-2E91-6B74-D4DD70EC8F4E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>45E3A01D-3DF6-B406-9DA3-1C64BE560E0E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>ECE6E1F8-3E45-409B-AC52-9C23C1F2984B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

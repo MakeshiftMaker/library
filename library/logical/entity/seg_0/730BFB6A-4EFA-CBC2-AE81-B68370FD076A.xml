@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="730BFB6A-4EFA-CBC2-AE81-B68370FD076A" name="Book">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-19 11:16:15 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="BA70AD88-4264-725F-7FBB-E6121BFE8E6F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>45E3A01D-3DF6-B406-9DA3-1C64BE560E0E</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ISBN" id="B5C9D5FC-2436-A245-D3A6-912631B2B478">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-03-20 17:35:23 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="BA70AD88-4264-725F-7FBB-E6121BFE8E6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<ownDataTypeParameters>22,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Author" id="D6AA910C-F979-BB5A-420E-1D9676BCCE31">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-03-20 17:58:45 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="BA70AD88-4264-725F-7FBB-E6121BFE8E6F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FSK_Media" directorySegmentName="seg_0" id="FA5F7DAC-76CE-6808-75CC-E19DE50B33A0">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 00:56:23 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<sourcePk>3130B07E-F496-5C16-BE82-2C67EA0C9C41</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1E55223C-0CA9-FA79-2BD0-FCB35FDCA19F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>45E3A01D-3DF6-B406-9DA3-1C64BE560E0E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

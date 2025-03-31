@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="265B4B6C-BCC1-BCBD-A28C-E3DADD5A4702" containerWithKeyObject="D086451D-DDCD-8CA2-E391-5D95A2526855" localFKIndex="C4177F8F-0E25-BE47-8C3D-88EAA6437CFB" name="Audio_Media_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>7DE38E60-93B4-2B9E-7B5A-227106D14D19</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<referredTableLongName>Media</referredTableLongName>
+<arc>E84C03C7-550E-089D-DA27-CDF99B726B88</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B4D7708A-CD4B-E114-8482-3696A6FBF785</referredTableID>
+<keyObject>DBC93183-7A61-16D2-82EC-E7D3C9201847</keyObject>
+<referredKeyID>DBC93183-7A61-16D2-82EC-E7D3C9201847</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Media_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>Audio</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

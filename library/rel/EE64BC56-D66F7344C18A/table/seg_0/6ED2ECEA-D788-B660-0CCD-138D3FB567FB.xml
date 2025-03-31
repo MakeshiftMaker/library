@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6ED2ECEA-D788-B660-0CCD-138D3FB567FB" name="Book">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>730BFB6A-4EFA-CBC2-AE81-B68370FD076A</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Media_ID" id="472E23AC-8A78-5DE8-24F4-29E4607EEEDE">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<comment><![CDATA[Exemplar Identifier]]></comment>
+<generatorID>BB549652-0799-F6F5-B13E-F539A84A9882</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9799232-BDF4-1CBE-C2B2-0DC5AF08F7A9" referredColumn="49BFF0C6-1E38-3F5D-2383-DA4816A9D1DC"/>
+</associations>
+</Column>
+<Column name="ISBN" id="06997442-6F40-4A57-B61A-B6A839DC4739">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>B5C9D5FC-2436-A245-D3A6-912631B2B478</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>22</dataTypeSize>
+<ownDataTypeParameters>22,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Author" id="661D77AE-6EAB-FE54-42DC-1513202D67A6">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>D6AA910C-F979-BB5A-420E-1D9676BCCE31</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C360BB17-F713-DF16-983E-915E5493EB72" name="Book_PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>15EF7138-F7A1-2E91-6B74-D4DD70EC8F4E</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="472E23AC-8A78-5DE8-24F4-29E4607EEEDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA795CED-06DB-EC3F-3A16-4C7728916FE0" name="Book_Media_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>4EE54076-7461-F1D9-BD74-67F07E677497</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="472E23AC-8A78-5DE8-24F4-29E4607EEEDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

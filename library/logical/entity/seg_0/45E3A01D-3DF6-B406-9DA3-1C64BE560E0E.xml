@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="45E3A01D-3DF6-B406-9DA3-1C64BE560E0E" name="Media">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-18 14:30:37 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<discriminatorAttributeID>FD4D17C9-1082-6966-0495-396AB358E563</discriminatorAttributeID>
+<completeSubtypes>true</completeSubtypes>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Media_ID" id="BB549652-0799-F6F5-B13E-F539A84A9882">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-18 14:31:21 UTC</createdTime>
+<comment><![CDATA[Exemplar Identifier]]></comment>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Title" id="4E88C3E4-2EF1-3B31-E38E-9CAF0767C66C">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 00:06:18 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Description " id="484DE70A-1D40-B6B8-E524-C946FC3CFB7D">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 00:06:18 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cover" id="78342CB3-E905-494E-E46B-4758FD242037">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 00:09:47 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FSK_ID" id="1E3F0BAA-4E89-B16E-3E3C-37D0AE37D9D0">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 00:56:23 UTC</createdTime>
+<generatorID>FA5F7DAC-76CE-6808-75CC-E19DE50B33A0</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+</engineerTo>
+<referedAttribute>4AAC98A6-D165-EF9B-1C87-DBFD3E441D13</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Library_ID" id="C9EE8250-EA45-1E9E-5997-2ED896087DA1">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 01:12:50 UTC</createdTime>
+<generatorID>E4E6EF90-DB87-25EB-CCDC-BDDA7517E312</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+</engineerTo>
+<referedAttribute>3AF4A3EF-9A35-89B0-6B05-01D7EB4AAFDC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Type_ID" id="FD4D17C9-1082-6966-0495-396AB358E563">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:55:41 UTC</createdTime>
+<generatorID>F495244D-CB67-809D-2493-78D9F8A1602C</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+</engineerTo>
+<referedAttribute>81E3220B-D0B9-7560-81BC-1F6453630A97</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="15EF7138-F7A1-2E91-6B74-D4DD70EC8F4E" name="Media PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-18 14:33:09 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="EE64BC56-80F3-5E73-EBC8-D66F7344C18A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BB549652-0799-F6F5-B13E-F539A84A9882</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="747C9965-04A7-3F36-DD57-62B1897380F5" name="Rental">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>383D9ABD-3E38-B813-E6DA-9B06CCB4A0B8</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Start_Date" id="78117D57-5D7C-417E-4262-9EDD44F515CC">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>86BBFB1A-80A7-ECFD-D723-773CCE665F27</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="End_Date" id="969C93D3-B353-DA73-58AA-4274C740B0F8">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>A47C58C3-F6EC-5699-ABF8-420553820092</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Copy_Copy_ID" id="FAA0AD27-8600-33BA-F3EB-4BA3D3D1DF84">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>62C1AB02-C9B2-5CF8-5E66-649C56022E2A</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4504B87E-D250-C203-BC4C-4DA5211C8718" referredColumn="04F5779B-8A83-F372-F646-C1EF57D7DAF2"/>
+</associations>
+</Column>
+<Column name="Copy_Media_ID" id="78E6A8BF-9EFC-7BCD-FD36-F7369B1B4E89">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<comment><![CDATA[Exemplar Identifier]]></comment>
+<generatorID>81242677-6565-0FBA-CBC3-11A238AF8E9E</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4504B87E-D250-C203-BC4C-4DA5211C8718" referredColumn="5CE3586A-60FC-3217-C7AD-0386BFD6E02C"/>
+</associations>
+</Column>
+<Column name="Customer_Customer_ID" id="7D11BEDF-33DC-1135-AEEA-5BD785CC4DAA">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>DBFAE767-4F8B-D688-7647-CF2200FE78D3</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9625DA83-BB6A-A804-A50E-7426A0099237" referredColumn="E1640D2C-8D51-1A4D-1830-E37384E69031"/>
+</associations>
+</Column>
+<Column name="Rental_ID" id="D1AA5649-8FF6-51E4-4E84-D808F0ABA745">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E3DED5E8-A4BF-54C7-12C2-177D032CC780" name="Rental_PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="D1AA5649-8FF6-51E4-4E84-D808F0ABA745"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC8A2A36-464C-7D2C-375C-58300D3FBE43" name="Rental_Copy_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>590355EB-1BD9-D8DB-F721-72F455A1A3AD</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FAA0AD27-8600-33BA-F3EB-4BA3D3D1DF84"/>
+<colUsage columnID="78E6A8BF-9EFC-7BCD-FD36-F7369B1B4E89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7F5C0C7-9DC7-D277-4EF3-79DD9C302E85" name="Rental_Customer_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>B927163B-B42A-60E7-9382-CABEBB38D69A</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D11BEDF-33DC-1135-AEEA-5BD785CC4DAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

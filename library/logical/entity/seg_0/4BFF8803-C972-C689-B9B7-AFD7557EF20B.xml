@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4BFF8803-C972-C689-B9B7-AFD7557EF20B" name="Customer">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-18 14:43:56 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Customer_ID" id="439DB462-484A-6072-C7D4-D82AFD236065">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-18 14:44:19 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FirstName" id="87C8CCEB-2879-55B3-7659-5E5F29C9DEF4">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 00:21:41 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LastName" id="2D7BB873-A1E9-0AED-3E3C-0AEE1CB56060">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 00:22:03 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Mail" id="05E74978-0387-82A4-0CF1-7E51BF03BADA">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 00:22:15 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Phone" id="100572B5-0353-3049-244E-758BFDEDBBDC">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 00:22:42 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Blood_Type" id="C18B14FC-4D62-B016-C352-BFE9D2ABE3D2">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 00:25:52 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Birth_Date" id="6E12A485-AEB3-2983-A49B-7BBB561A3CDF">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 01:01:10 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="283D1BB1-DE20-5D90-8401-8203C4DDEEF3" name="Customer PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-18 14:44:28 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>439DB462-484A-6072-C7D4-D82AFD236065</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

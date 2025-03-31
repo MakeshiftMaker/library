@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Location_Library" directorySegmentName="seg_0" id="0BD6B0B8-2AA0-2ED7-B5FB-F78C3C69A1ED">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-19 12:45:38 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4397A1AA-6DA2-8719-C6A0-38F63AAB6FA4" value="true"/>
+</engineerTo>
+<sourcePk>7967D6C8-BB3F-84C5-57A2-FFC5B5A6A1B1</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EFDF8909-C361-CD55-9AF6-09872A204E62</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6E15FCFE-1C71-E672-9034-C3B8B5907BEE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

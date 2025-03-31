@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="61877F7A-2002-3B52-4622-E950AF037819" name="Shelf">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-19 12:46:10 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Shelf_ID" id="693080E0-93C2-A42D-AECB-5CEF38BFFFD0">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-19 12:46:22 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Library_ID" id="F1A1CEDD-BC02-C191-3CBE-5C03CB48D4DB">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 01:13:26 UTC</createdTime>
+<generatorID>E4CC042F-9F58-567D-E513-62D1FCA3B5FF</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<referedAttribute>3AF4A3EF-9A35-89B0-6B05-01D7EB4AAFDC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Genre_ID" id="2F81EDCD-7CCE-6CBD-52F3-285EB4771596">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 01:15:10 UTC</createdTime>
+<generatorID>3E353FC4-0575-960C-7838-28C557FD6F13</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<referedAttribute>20589121-EEB6-4FE4-9D97-DF4EA6B5A7CC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="975B8FDB-9149-54FF-5E93-8518BB577BFA" name="Shelf PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-19 12:46:31 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>693080E0-93C2-A42D-AECB-5CEF38BFFFD0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

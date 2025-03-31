@@ -1,0 +1,162 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B4D7708A-CD4B-E114-8482-3696A6FBF785" name="Media">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>45E3A01D-3DF6-B406-9DA3-1C64BE560E0E</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Media_ID" id="49BFF0C6-1E38-3F5D-2383-DA4816A9D1DC">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<comment><![CDATA[Exemplar Identifier]]></comment>
+<generatorID>BB549652-0799-F6F5-B13E-F539A84A9882</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Title" id="0BAFD222-FAF5-59D1-ECD3-911FAEC1F6B3">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>4E88C3E4-2EF1-3B31-E38E-9CAF0767C66C</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Description" id="F35470D3-834E-F2C3-3831-F3816B380C3D">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>484DE70A-1D40-B6B8-E524-C946FC3CFB7D</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cover" id="178A6D45-3854-471D-1377-9216AC8D05A6">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>78342CB3-E905-494E-E46B-4758FD242037</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FSK_FSK_ID" id="E931C6BC-4599-078E-B7E5-525CA5445054">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>1E3F0BAA-4E89-B16E-3E3C-37D0AE37D9D0</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B403C043-9FB7-D54E-688F-95B849CBD4D0" referredColumn="AFDEF424-C93A-3038-6426-BE33F788E840"/>
+</associations>
+</Column>
+<Column name="Library_Library_ID" id="0436A7AB-CA6A-E406-B990-61D461F555CD">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>C9EE8250-EA45-1E9E-5997-2ED896087DA1</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="74B75C40-DE78-C851-64E8-4EC867220963" referredColumn="78B23077-F728-CBCB-5C00-D2ACAE01A513"/>
+</associations>
+</Column>
+<Column name="Type_Type_ID" id="77B9C1F3-CD65-207B-9BB4-2E46612E3CCC">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>FD4D17C9-1082-6966-0495-396AB358E563</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<constraintName>CH_INH_Media</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="Audio" description="entity Audio"/>
+<valueDef value="Book" description="entity Book"/>
+<valueDef value="Magazine" description="entity Magazine"/>
+<valueDef value="Movie" description="entity Movie"/>
+</listOfValues>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isDiscriminatorColumn>true</isDiscriminatorColumn>
+<associations>
+<colAssociation fkAssociation="E44465F8-DBDF-A362-6038-EFE6F5612869" referredColumn="6D19E362-C77B-872F-64E5-06E8AE08E1CC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DBC93183-7A61-16D2-82EC-E7D3C9201847" name="Media_PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>15EF7138-F7A1-2E91-6B74-D4DD70EC8F4E</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49BFF0C6-1E38-3F5D-2383-DA4816A9D1DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4B491DD-CE45-6CF6-E48F-3E8A18DDABCA" name="Media_FSK_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>FA5F7DAC-76CE-6808-75CC-E19DE50B33A0</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E931C6BC-4599-078E-B7E5-525CA5445054"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D69D1D93-4C6C-9EC1-A607-79EFF5CF44BB" name="Media_Library_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>E4E6EF90-DB87-25EB-CCDC-BDDA7517E312</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0436A7AB-CA6A-E406-B990-61D461F555CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E56AA4C-C459-DB90-A14C-25FA00C64F00" name="Media_Type_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-28 11:57:26 UTC</createdTime>
+<generatorID>F495244D-CB67-809D-2493-78D9F8A1602C</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77B9C1F3-CD65-207B-9BB4-2E46612E3CCC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

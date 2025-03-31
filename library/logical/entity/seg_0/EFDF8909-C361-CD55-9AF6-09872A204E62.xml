@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EFDF8909-C361-CD55-9AF6-09872A204E62" name="Location">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-18 14:43:05 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Location_ID" id="1AA0DE07-6B12-092D-6492-F199A059F4FC">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-18 14:43:12 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Country_ID" id="0692F999-2598-6B33-014C-9894A52090F8">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-19 12:42:58 UTC</createdTime>
+<generatorID>F22B7223-81DF-DDB8-3E30-9CA4A68209D6</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<referedAttribute>3A0A581A-1BD6-3313-F096-9EA81AC776DD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Location_Name" id="3B08FDE3-EE6A-C3B2-BD22-BC58B893DA08">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-22 01:11:13 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7967D6C8-BB3F-84C5-57A2-FFC5B5A6A1B1" name="Location PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-03-18 14:43:27 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1AA0DE07-6B12-092D-6492-F199A059F4FC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
