@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="97F5F3AE-CE2D-4088-B7E1-E3C11F966A62" containerWithKeyObject="E171ED64-1D44-5FA6-CEE7-6760E4F55DFE" localFKIndex="DADE36CF-6A71-BC4C-07BD-A4B0D2901AE8" name="Movie_Media_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-04-01 10:06:01 UTC</createdTime>
+<generatorID>AC0C9953-0009-D9C8-7DC2-078A061077AB</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<referredTableLongName>Media</referredTableLongName>
+<arc>6C00E28D-AC39-DC90-661E-28ACAD33C9E5</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4CE1ED33-3199-8925-0695-ECA08DAEF20F</referredTableID>
+<keyObject>A60FFA9F-102E-D5F9-F2F4-6A73FBC554D5</keyObject>
+<referredKeyID>A60FFA9F-102E-D5F9-F2F4-6A73FBC554D5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Media_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>Movie</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
