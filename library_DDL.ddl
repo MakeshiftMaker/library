@@ -17,7 +17,8 @@ CREATE TABLE Movie
     )
 ;
 
-
+ALTER TABLE Movie
+    ADD CONSTRAINT Movie_PK PRIMARY KEY ( Media_ID ) ;
 
 CREATE TABLE Audio 
     ( 
