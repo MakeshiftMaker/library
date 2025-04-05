@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Media_Price" directorySegmentName="seg_0" id="71DF686E-957F-90AE-91FC-F3ACA6818DD4">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 08:47:53 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
+</engineerTo>
+<sourcePk>15EF7138-F7A1-2E91-6B74-D4DD70EC8F4E</sourcePk>
+<targetPk>152C6BAA-7D13-580D-2B69-B2E42C81B872</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>45E3A01D-3DF6-B406-9DA3-1C64BE560E0E</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>75C6688C-9C77-3048-522D-35B6B484FBEA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

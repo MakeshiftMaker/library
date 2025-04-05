@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="564ABD4F-27D3-1A73-E8FE-BC7D5B1C9738" name="Price">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 08:45:08 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Start_Date" id="65482D59-09D6-C8A8-38F8-4A1FE3392E4D">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 08:51:41 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Price" id="047DDD62-F44C-FEB4-9335-3DB307D8CB68">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 08:53:09 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Type_ID" id="19CA3332-AFE2-087C-5835-4F1B063278F8">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 08:53:41 UTC</createdTime>
+<generatorID>72452FE0-C58D-56E6-2935-D322A4753E56</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
+</engineerTo>
+<referedAttribute>F2DB8D3B-1411-8512-E261-7D305BF47E36</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0563EB7C-0A7A-E0B9-57F1-A5B75D3526ED" name="Price_List PK">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 08:51:48 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>65482D59-09D6-C8A8-38F8-4A1FE3392E4D</attributeRef>
+<attributeRef>047DDD62-F44C-FEB4-9335-3DB307D8CB68</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

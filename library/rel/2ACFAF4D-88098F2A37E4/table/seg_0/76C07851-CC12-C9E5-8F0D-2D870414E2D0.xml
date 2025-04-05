@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="76C07851-CC12-C9E5-8F0D-2D870414E2D0" name="Location">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>EFDF8909-C361-CD55-9AF6-09872A204E62</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Location_ID" id="67A642D5-687D-2B84-0BBE-CF597A751411">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>1AA0DE07-6B12-092D-6492-F199A059F4FC</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Country_Country_ID" id="EAAB6C49-D15B-E39D-BEEA-E0698D7AE9F5">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>0692F999-2598-6B33-014C-9894A52090F8</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="36CFC723-25D7-F887-8374-CAC471D69111" referredColumn="A0F94A2D-2890-662B-C19A-15227E6B4F77"/>
+</associations>
+</Column>
+<Column name="Location_Name" id="B663CCF5-0FAD-0279-F3E6-2B2C2B4E807C">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>3B08FDE3-EE6A-C3B2-BD22-BC58B893DA08</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1E4B46AF-A6DA-9976-FD8D-49562EAD90F2" name="Location_PK">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>7967D6C8-BB3F-84C5-57A2-FFC5B5A6A1B1</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67A642D5-687D-2B84-0BBE-CF597A751411"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A527951D-2C05-DAD7-AAEE-7C0F3369D288" name="Location_Country_FK">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>F22B7223-81DF-DDB8-3E30-9CA4A68209D6</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAAB6C49-D15B-E39D-BEEA-E0698D7AE9F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

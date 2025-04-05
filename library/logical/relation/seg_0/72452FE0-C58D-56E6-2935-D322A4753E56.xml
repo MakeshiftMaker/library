@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Type_Price_List" directorySegmentName="seg_0" id="72452FE0-C58D-56E6-2935-D322A4753E56">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 08:53:41 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
+</engineerTo>
+<sourcePk>152C6BAA-7D13-580D-2B69-B2E42C81B872</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>75C6688C-9C77-3048-522D-35B6B484FBEA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>564ABD4F-27D3-1A73-E8FE-BC7D5B1C9738</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B979ACBB-0DB6-CBC2-79C9-525E026E5015" name="Rental">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>383D9ABD-3E38-B813-E6DA-9B06CCB4A0B8</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Rental_ID" id="99D030D5-16A3-B2B8-DA2A-6460C6FBE5BB">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>F3ED9EEA-CA12-FA31-E0D6-3A8B74C23A80</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Start_Date" id="A1FCD59D-609A-A3C8-17EB-1F0C3D849D7C">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>86BBFB1A-80A7-ECFD-D723-773CCE665F27</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="End_Date" id="BD927A90-5654-DD5F-E503-2C87AECBACD2">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>A47C58C3-F6EC-5699-ABF8-420553820092</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Copy_Copy_ID" id="C424F7AF-2489-A81B-E524-C71CA7D3DC4D">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>62C1AB02-C9B2-5CF8-5E66-649C56022E2A</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72FE0D6B-E9ED-F8E0-9A9F-E78221A969A1" referredColumn="529096AB-D19C-848C-21B3-25073AFAFE9C"/>
+</associations>
+</Column>
+<Column name="Copy_Media_ID" id="873D3DD4-B8E6-21E6-6189-AD26D69DE3B5">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<comment><![CDATA[Exemplar Identifier]]></comment>
+<generatorID>81242677-6565-0FBA-CBC3-11A238AF8E9E</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72FE0D6B-E9ED-F8E0-9A9F-E78221A969A1" referredColumn="49D3B09B-E634-3DE0-91BB-59E934637557"/>
+</associations>
+</Column>
+<Column name="Customer_Customer_ID" id="3C15A6F6-A393-ED9A-9566-595F0E52FB40">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>DBFAE767-4F8B-D688-7647-CF2200FE78D3</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C15B12AC-A316-332D-CA21-23AFF821275F" referredColumn="078FDBF6-0FFF-C639-FD36-8A6C4D965355"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F0B3C3D3-3513-3BF0-ECBC-D06CB1068FB7" name="Rental_PK">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>E394B29B-DCC5-B74E-7553-68C996AD2EBE</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99D030D5-16A3-B2B8-DA2A-6460C6FBE5BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B681262-B3F7-B5B2-6075-6B0D8601F665" name="Rental_Copy_FK">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>590355EB-1BD9-D8DB-F721-72F455A1A3AD</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C424F7AF-2489-A81B-E524-C71CA7D3DC4D"/>
+<colUsage columnID="873D3DD4-B8E6-21E6-6189-AD26D69DE3B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9DBF3777-97C6-40E0-39A6-F391E674DC57" name="Rental_Customer_FK">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>B927163B-B42A-60E7-9382-CABEBB38D69A</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C15A6F6-A393-ED9A-9566-595F0E52FB40"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

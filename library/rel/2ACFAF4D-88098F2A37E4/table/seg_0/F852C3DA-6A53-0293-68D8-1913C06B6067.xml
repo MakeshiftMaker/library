@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F852C3DA-6A53-0293-68D8-1913C06B6067" name="Price">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>564ABD4F-27D3-1A73-E8FE-BC7D5B1C9738</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Start_Date" id="10248784-80F2-5304-FC30-07EB5B8ED87E">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>65482D59-09D6-C8A8-38F8-4A1FE3392E4D</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Price" id="0EE75274-2045-F152-6CAF-A34D9D0BEDC8">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>047DDD62-F44C-FEB4-9335-3DB307D8CB68</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Type_Type_ID" id="148F0B02-27CE-4E98-054A-1F65F936EA23">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>19CA3332-AFE2-087C-5835-4F1B063278F8</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="81F30754-A398-458C-0C5D-6C1AB4C3A8C0" referredColumn="8AEEBA9A-C253-1D23-D832-BCBC9F12FF84"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC02EE3E-39BB-603F-1376-AE4231880177" name="Price_PK">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>0563EB7C-0A7A-E0B9-57F1-A5B75D3526ED</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10248784-80F2-5304-FC30-07EB5B8ED87E"/>
+<colUsage columnID="0EE75274-2045-F152-6CAF-A34D9D0BEDC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03F3F9C6-2AA0-6864-F895-B14B9CFA144B" name="Price_Type_FK">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>72452FE0-C58D-56E6-2935-D322A4753E56</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="148F0B02-27CE-4E98-054A-1F65F936EA23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
