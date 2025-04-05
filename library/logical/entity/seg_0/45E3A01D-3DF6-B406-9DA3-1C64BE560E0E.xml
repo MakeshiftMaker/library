@@ -96,6 +96,21 @@
 <logicalDatatype>LOGDT032</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Type_ID" id="AAB629A7-299C-28BB-0837-CDA1F23DD983">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 08:49:25 UTC</createdTime>
+<generatorID>71DF686E-957F-90AE-91FC-F3ACA6818DD4</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
+</engineerTo>
+<referedAttribute>F2DB8D3B-1411-8512-E261-7D305BF47E36</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="15EF7138-F7A1-2E91-6B74-D4DD70EC8F4E" name="Media PK">
