@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="53B6C065-384E-70FA-03F5-4046E82F7D90" containerWithKeyObject="31DCE97E-9165-00E5-B548-9FC5A7DEAC66" localFKIndex="14BB7931-F947-3D60-6505-B88D144B3B0B" name="Shelf_Genres_FK">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>3E353FC4-0575-960C-7838-28C557FD6F13</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<referredTableLongName>Genres</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C0682B3E-BD38-DE2A-85B8-249B52F33559</referredTableID>
+<keyObject>36F932FA-565B-2AA9-6637-03E820DEFAEC</keyObject>
+<referredKeyID>36F932FA-565B-2AA9-6637-03E820DEFAEC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Genre_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

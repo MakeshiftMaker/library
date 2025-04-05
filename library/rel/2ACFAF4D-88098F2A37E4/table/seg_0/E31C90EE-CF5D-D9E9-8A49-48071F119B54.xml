@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E31C90EE-CF5D-D9E9-8A49-48071F119B54" name="FSK">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>1E55223C-0CA9-FA79-2BD0-FCB35FDCA19F</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FSK_ID" id="7AD59A3D-CFED-2EF2-E402-ED3A0541509A">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>4AAC98A6-D165-EF9B-1C87-DBFD3E441D13</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rating" id="4409846A-4736-3AA7-2B6A-422418383BFC">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>C944D9C8-1192-6305-54B0-5C46BD6810C2</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="608065D5-F21A-9AE9-2166-A4DC78DB97D8" name="FSK_PK">
+<createdBy>Kerstin</createdBy>
+<createdTime>2025-04-05 09:01:28 UTC</createdTime>
+<generatorID>3130B07E-F496-5C16-BE82-2C67EA0C9C41</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AD59A3D-CFED-2EF2-E402-ED3A0541509A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
