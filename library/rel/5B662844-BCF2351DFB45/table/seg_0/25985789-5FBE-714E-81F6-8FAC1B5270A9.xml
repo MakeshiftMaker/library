@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="25985789-5FBE-714E-81F6-8FAC1B5270A9" name="Shelf">
+<createdBy>maker</createdBy>
+<createdTime>2025-04-01 10:06:01 UTC</createdTime>
+<generatorID>61877F7A-2002-3B52-4622-E950AF037819</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Shelf_ID" id="C7602F4D-2DAE-EA89-D731-2DCC3FFEB1DB">
+<createdBy>maker</createdBy>
+<createdTime>2025-04-01 10:06:01 UTC</createdTime>
+<generatorID>693080E0-93C2-A42D-AECB-5CEF38BFFFD0</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Library_Library_ID" id="D1670906-7679-5483-494C-798AC610A934">
+<createdBy>maker</createdBy>
+<createdTime>2025-04-01 10:06:01 UTC</createdTime>
+<generatorID>F1A1CEDD-BC02-C191-3CBE-5C03CB48D4DB</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CCA5C52B-6ACA-0828-CEDE-27138A8B9862" referredColumn="63385157-0B97-455A-B651-40B9DA2A528F"/>
+</associations>
+</Column>
+<Column name="Genres_Genre_ID" id="7C71D979-9632-3568-1FF9-D48DA78FC2D6">
+<createdBy>maker</createdBy>
+<createdTime>2025-04-01 10:06:01 UTC</createdTime>
+<generatorID>2F81EDCD-7CCE-6CBD-52F3-285EB4771596</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT032</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5A462986-1E24-9B5B-71E7-D2B2D17DA791" referredColumn="56639476-C827-1774-A55C-6B5B3A0B70C9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="07A8CF83-EA67-44E4-9E91-4ED4FD6A59E7" name="Shelf_PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-04-01 10:06:01 UTC</createdTime>
+<generatorID>975B8FDB-9149-54FF-5E93-8518BB577BFA</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7602F4D-2DAE-EA89-D731-2DCC3FFEB1DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07CC90CB-87D1-2ADA-7FFE-E4766E59D202" name="Shelf_Library_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-04-01 10:06:01 UTC</createdTime>
+<generatorID>E4CC042F-9F58-567D-E513-62D1FCA3B5FF</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1670906-7679-5483-494C-798AC610A934"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5F42CE9-9B0B-23E0-1C17-1F7BAA4EDAFB" name="Shelf_Genres_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-04-01 10:06:01 UTC</createdTime>
+<generatorID>3E353FC4-0575-960C-7838-28C557FD6F13</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C71D979-9632-3568-1FF9-D48DA78FC2D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
