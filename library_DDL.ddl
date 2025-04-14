@@ -11,7 +11,7 @@
 
 CREATE TABLE Audio 
     ( 
-     Media_ID ROWID  NOT NULL , 
+     Media_ID NUMBER  NOT NULL ,
      Codec    VARCHAR2 (50)  NOT NULL , 
      Runtime  DATE  NOT NULL 
     ) 
@@ -22,7 +22,7 @@ ALTER TABLE Audio
 
 CREATE TABLE Book 
     ( 
-     Media_ID ROWID  NOT NULL , 
+     Media_ID NUMBER  NOT NULL ,
      ISBN     VARCHAR2 (22)  NOT NULL , 
      Author   VARCHAR2 (70)  NOT NULL 
     ) 
@@ -33,8 +33,8 @@ ALTER TABLE Book
 
 CREATE TABLE Copy 
     ( 
-     Copy_ID        ROWID  NOT NULL , 
-     Media_Media_ID ROWID  NOT NULL , 
+     Copy_ID        NUMBER  NOT NULL ,
+     Media_Media_ID NUMBER  NOT NULL ,
      Available      NUMBER  NOT NULL , 
      Condition      VARCHAR2 (100)  NOT NULL , 
      Barcode        VARCHAR2 (32)  NOT NULL 
@@ -46,7 +46,7 @@ ALTER TABLE Copy
 
 CREATE TABLE Country 
     ( 
-     Country_ID   ROWID  NOT NULL , 
+     Country_ID   NUMBER  NOT NULL ,
      Country_Name VARCHAR2 (50)  NOT NULL 
     ) 
 ;
@@ -56,7 +56,7 @@ ALTER TABLE Country
 
 CREATE TABLE Customer 
     ( 
-     Customer_ID ROWID  NOT NULL , 
+     Customer_ID NUMBER  NOT NULL ,
      FirstName   VARCHAR2 (50)  NOT NULL , 
      LastName    VARCHAR2 (50)  NOT NULL , 
      Mail        VARCHAR2 (50)  NOT NULL , 
@@ -71,7 +71,7 @@ ALTER TABLE Customer
 
 CREATE TABLE FSK 
     ( 
-     FSK_ID ROWID  NOT NULL , 
+     FSK_ID NUMBER  NOT NULL ,
      Rating INTEGER  NOT NULL 
     ) 
 ;
@@ -81,7 +81,7 @@ ALTER TABLE FSK
 
 CREATE TABLE Genres 
     ( 
-     Genre_ID  ROWID  NOT NULL , 
+     Genre_ID  NUMBER  NOT NULL ,
      Genre     VARCHAR2 (50)  NOT NULL , 
      Surcharge NUMBER  NOT NULL 
     ) 
@@ -92,8 +92,8 @@ ALTER TABLE Genres
 
 CREATE TABLE Library 
     ( 
-     Library_ID           ROWID  NOT NULL , 
-     Location_Location_ID ROWID  NOT NULL , 
+     Library_ID           NUMBER  NOT NULL ,
+     Location_Location_ID NUMBER  NOT NULL ,
      Library_Name         VARCHAR2 (50)  NOT NULL 
     ) 
 ;
@@ -103,8 +103,8 @@ ALTER TABLE Library
 
 CREATE TABLE Location 
     ( 
-     Location_ID        ROWID  NOT NULL , 
-     Country_Country_ID ROWID  NOT NULL , 
+     Location_ID        NUMBER  NOT NULL ,
+     Country_Country_ID NUMBER  NOT NULL ,
      Location_Name      VARCHAR2 (50)  NOT NULL 
     ) 
 ;
@@ -114,7 +114,7 @@ ALTER TABLE Location
 
 CREATE TABLE Magazine 
     ( 
-     Media_ID ROWID  NOT NULL , 
+     Media_ID NUMBER  NOT NULL ,
      Edition  VARCHAR2 (10)  NOT NULL 
     ) 
 ;
@@ -124,12 +124,12 @@ ALTER TABLE Magazine
 
 CREATE TABLE Media 
     ( 
-     Media_ID           ROWID  NOT NULL , 
+     Media_ID           NUMBER  NOT NULL ,
      Title              VARCHAR2 (50) , 
      Description        CLOB , 
      Cover              BLOB , 
-     FSK_FSK_ID         ROWID  NOT NULL , 
-     Library_Library_ID ROWID  NOT NULL , 
+     FSK_FSK_ID         NUMBER  NOT NULL ,
+     Library_Library_ID NUMBER  NOT NULL ,
      Type_Type_ID       VARCHAR2 (8)  NOT NULL 
     ) 
 ;
@@ -139,8 +139,8 @@ ALTER TABLE Media
 
 CREATE TABLE Media_Genre 
     ( 
-     Genres_Genre_ID ROWID  NOT NULL , 
-     Media_Media_ID  ROWID  NOT NULL 
+     Genres_Genre_ID NUMBER  NOT NULL ,
+     Media_Media_ID  NUMBER  NOT NULL
     ) 
 ;
 
@@ -149,7 +149,7 @@ ALTER TABLE Media_Genre
 
 CREATE TABLE Movie 
     ( 
-     Media_ID ROWID  NOT NULL , 
+     Media_ID NUMBER  NOT NULL ,
      Format   VARCHAR2 (10)  NOT NULL , 
      Runtime  DATE  NOT NULL 
     ) 
@@ -171,12 +171,12 @@ ALTER TABLE Price
 
 CREATE TABLE Rental 
     ( 
-     Rental_ID            ROWID  NOT NULL , 
+     Rental_ID            NUMBER  NOT NULL ,
      Start_Date           DATE  NOT NULL , 
      End_Date             DATE  NOT NULL , 
-     Copy_Copy_ID         ROWID  NOT NULL , 
-     Copy_Media_ID        ROWID  NOT NULL , 
-     Customer_Customer_ID ROWID  NOT NULL 
+     Copy_Copy_ID         NUMBER  NOT NULL ,
+     Copy_Media_ID        NUMBER  NOT NULL ,
+     Customer_Customer_ID NUMBER  NOT NULL
     ) 
 ;
 
@@ -185,11 +185,11 @@ ALTER TABLE Rental
 
 CREATE TABLE Reservation 
     ( 
-     Reservation_ID         ROWID  NOT NULL , 
-     Media_Media_ID         ROWID  NOT NULL , 
+     Reservation_ID         NUMBER  NOT NULL ,
+     Media_Media_ID         NUMBER  NOT NULL ,
      Reservation_Date       DATE  NOT NULL , 
      Reservation_Start_Date DATE  NOT NULL , 
-     Rental_Rental_ID       ROWID  NOT NULL 
+     Rental_Rental_ID       NUMBER  NOT NULL
     ) 
 ;
 CREATE UNIQUE INDEX Reservation__IDX ON Reservation 
@@ -203,9 +203,9 @@ ALTER TABLE Reservation
 
 CREATE TABLE Return 
     ( 
-     Return_ID        ROWID  NOT NULL , 
+     Return_ID        NUMBER  NOT NULL ,
      Return_Date      DATE  NOT NULL , 
-     Rental_Rental_ID ROWID  NOT NULL 
+     Rental_Rental_ID NUMBER  NOT NULL
     ) 
 ;
 CREATE UNIQUE INDEX Return__IDX ON Return 
@@ -219,9 +219,9 @@ ALTER TABLE Return
 
 CREATE TABLE Shelf 
     ( 
-     Shelf_ID           ROWID  NOT NULL , 
-     Library_Library_ID ROWID  NOT NULL , 
-     Genres_Genre_ID    ROWID  NOT NULL 
+     Shelf_ID           NUMBER  NOT NULL ,
+     Library_Library_ID NUMBER  NOT NULL ,
+     Genres_Genre_ID    NUMBER  NOT NULL
     ) 
 ;
 
