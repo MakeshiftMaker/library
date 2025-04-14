@@ -4,7 +4,8 @@
 <createdTime>2025-03-19 12:34:18 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
-<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+<item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
+<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,20 +22,22 @@
 <createdTime>2025-03-20 17:31:11 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
-<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+<item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
+<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Runtime" id="65E7B557-AD41-3564-F942-FFB7379AAB0E">
 <createdBy>Kerstin</createdBy>
 <createdTime>2025-03-20 17:34:17 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
-<item key="4CB4A927-A422-19A8-B810-427DC726E415" value="true"/>
+<item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
+<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

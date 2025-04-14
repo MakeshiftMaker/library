@@ -5,6 +5,7 @@
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
 <item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
+<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,10 +22,11 @@
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
 <item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
+<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT032</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Genre" id="F76BF416-20D9-6905-B026-80760DE92DFA">
@@ -33,6 +35,7 @@
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
 <item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
+<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,6 +49,7 @@
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
 <item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
+<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -61,6 +65,7 @@
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
 <item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
+<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

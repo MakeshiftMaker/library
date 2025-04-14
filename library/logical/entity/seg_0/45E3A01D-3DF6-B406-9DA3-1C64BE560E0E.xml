@@ -5,6 +5,7 @@
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
 <item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
+<item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,11 +22,12 @@
 <comment><![CDATA[Exemplar Identifier]]></comment>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
+<item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
 <item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT032</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Title" id="4E88C3E4-2EF1-3B31-E38E-9CAF0767C66C">
@@ -33,6 +35,7 @@
 <createdTime>2025-03-22 00:06:18 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
+<item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
 <item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
@@ -47,6 +50,7 @@
 <createdTime>2025-03-22 00:06:18 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
+<item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
 <item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
@@ -60,6 +64,7 @@
 <createdTime>2025-03-22 00:09:47 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
+<item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
 <item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
@@ -68,32 +73,19 @@
 <logicalDatatype>LOGDT010</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="FSK_ID" id="1E3F0BAA-4E89-B16E-3E3C-37D0AE37D9D0">
-<createdBy>maker</createdBy>
-<createdTime>2025-03-22 00:56:23 UTC</createdTime>
-<generatorID>FA5F7DAC-76CE-6808-75CC-E19DE50B33A0</generatorID>
-<ownerDesignName>library</ownerDesignName>
-<engineerTo>
-<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
-</engineerTo>
-<referedAttribute>4AAC98A6-D165-EF9B-1C87-DBFD3E441D13</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT032</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="Library_ID" id="C9EE8250-EA45-1E9E-5997-2ED896087DA1">
 <createdBy>maker</createdBy>
 <createdTime>2025-03-22 01:12:50 UTC</createdTime>
 <generatorID>E4E6EF90-DB87-25EB-CCDC-BDDA7517E312</generatorID>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
+<item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
 <item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
 </engineerTo>
 <referedAttribute>3AF4A3EF-9A35-89B0-6B05-01D7EB4AAFDC</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT032</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Type_ID" id="AAB629A7-299C-28BB-0837-CDA1F23DD983">
@@ -102,6 +94,7 @@
 <generatorID>71DF686E-957F-90AE-91FC-F3ACA6818DD4</generatorID>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
+<item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
 <item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
 </engineerTo>
 <referedAttribute>F2DB8D3B-1411-8512-E261-7D305BF47E36</referedAttribute>
@@ -109,6 +102,21 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FSK_ID" id="4CEDBF22-CF89-C366-CD36-528C577D6EF3">
+<createdBy>maker</createdBy>
+<createdTime>2025-04-14 11:02:14 UTC</createdTime>
+<generatorID>FA5F7DAC-76CE-6808-75CC-E19DE50B33A0</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
+<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
+</engineerTo>
+<referedAttribute>4AAC98A6-D165-EF9B-1C87-DBFD3E441D13</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -118,6 +126,7 @@
 <createdTime>2025-03-18 14:33:09 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
+<item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
 <item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
 </engineerTo>
 <pk>true</pk>

@@ -9,468 +9,468 @@
 
 -- predefined type, no DDL - XMLTYPE
 
-CREATE TABLE Audio 
-    ( 
+CREATE TABLE Audio
+    (
      Media_ID NUMBER  NOT NULL ,
-     Codec    VARCHAR2 (50)  NOT NULL , 
-     Runtime  DATE  NOT NULL 
-    ) 
+     Codec    VARCHAR2 (50)  NOT NULL ,
+     Runtime  DATE  NOT NULL
+    )
 ;
 
-ALTER TABLE Audio 
+ALTER TABLE Audio
     ADD CONSTRAINT Audio_PK PRIMARY KEY ( Media_ID ) ;
 
-CREATE TABLE Book 
-    ( 
+CREATE TABLE Book
+    (
      Media_ID NUMBER  NOT NULL ,
-     ISBN     VARCHAR2 (22)  NOT NULL , 
-     Author   VARCHAR2 (70)  NOT NULL 
-    ) 
+     ISBN     VARCHAR2 (22)  NOT NULL ,
+     Author   VARCHAR2 (70)  NOT NULL
+    )
 ;
 
-ALTER TABLE Book 
+ALTER TABLE Book
     ADD CONSTRAINT Book_PK PRIMARY KEY ( Media_ID ) ;
 
-CREATE TABLE Copy 
-    ( 
+CREATE TABLE Copy
+    (
      Copy_ID        NUMBER  NOT NULL ,
      Media_Media_ID NUMBER  NOT NULL ,
-     Available      NUMBER  NOT NULL , 
-     Condition      VARCHAR2 (100)  NOT NULL , 
-     Barcode        VARCHAR2 (32)  NOT NULL 
-    ) 
+     Available      NUMBER  NOT NULL ,
+     Condition      VARCHAR2 (100)  NOT NULL ,
+     Barcode        VARCHAR2 (32)  NOT NULL
+    )
 ;
 
-ALTER TABLE Copy 
+ALTER TABLE Copy
     ADD CONSTRAINT Copy_PK PRIMARY KEY ( Copy_ID, Media_Media_ID ) ;
 
-CREATE TABLE Country 
-    ( 
+CREATE TABLE Country
+    (
      Country_ID   NUMBER  NOT NULL ,
-     Country_Name VARCHAR2 (50)  NOT NULL 
-    ) 
+     Country_Name VARCHAR2 (50)  NOT NULL
+    )
 ;
 
-ALTER TABLE Country 
+ALTER TABLE Country
     ADD CONSTRAINT Country_PK PRIMARY KEY ( Country_ID ) ;
 
-CREATE TABLE Customer 
-    ( 
+CREATE TABLE Customer
+    (
      Customer_ID NUMBER  NOT NULL ,
-     FirstName   VARCHAR2 (50)  NOT NULL , 
-     LastName    VARCHAR2 (50)  NOT NULL , 
-     Mail        VARCHAR2 (50)  NOT NULL , 
-     Phone       VARCHAR2 (15)  NOT NULL , 
-     Blood_Type  VARCHAR2 (3)  NOT NULL , 
-     Birth_Date  DATE  NOT NULL 
-    ) 
+     FirstName   VARCHAR2 (50)  NOT NULL ,
+     LastName    VARCHAR2 (50)  NOT NULL ,
+     Mail        VARCHAR2 (50)  NOT NULL ,
+     Phone       VARCHAR2 (15)  NOT NULL ,
+     Blood_Type  VARCHAR2 (3)  NOT NULL ,
+     Birth_Date  DATE  NOT NULL
+    )
 ;
 
-ALTER TABLE Customer 
+ALTER TABLE Customer
     ADD CONSTRAINT Customer_PK PRIMARY KEY ( Customer_ID ) ;
 
-CREATE TABLE FSK 
-    ( 
+CREATE TABLE FSK
+    (
      FSK_ID NUMBER  NOT NULL ,
-     Rating INTEGER  NOT NULL 
-    ) 
+     Rating INTEGER  NOT NULL
+    )
 ;
 
-ALTER TABLE FSK 
+ALTER TABLE FSK
     ADD CONSTRAINT FSK_PK PRIMARY KEY ( FSK_ID ) ;
 
-CREATE TABLE Genres 
-    ( 
+CREATE TABLE Genres
+    (
      Genre_ID  NUMBER  NOT NULL ,
-     Genre     VARCHAR2 (50)  NOT NULL , 
-     Surcharge NUMBER  NOT NULL 
-    ) 
+     Genre     VARCHAR2 (50)  NOT NULL ,
+     Surcharge NUMBER  NOT NULL
+    )
 ;
 
-ALTER TABLE Genres 
+ALTER TABLE Genres
     ADD CONSTRAINT Genres_PK PRIMARY KEY ( Genre_ID ) ;
 
-CREATE TABLE Library 
-    ( 
+CREATE TABLE Library
+    (
      Library_ID           NUMBER  NOT NULL ,
      Location_Location_ID NUMBER  NOT NULL ,
-     Library_Name         VARCHAR2 (50)  NOT NULL 
-    ) 
+     Library_Name         VARCHAR2 (50)  NOT NULL
+    )
 ;
 
-ALTER TABLE Library 
+ALTER TABLE Library
     ADD CONSTRAINT Library_PK PRIMARY KEY ( Library_ID ) ;
 
-CREATE TABLE Location 
-    ( 
+CREATE TABLE Location
+    (
      Location_ID        NUMBER  NOT NULL ,
      Country_Country_ID NUMBER  NOT NULL ,
-     Location_Name      VARCHAR2 (50)  NOT NULL 
-    ) 
+     Location_Name      VARCHAR2 (50)  NOT NULL
+    )
 ;
 
-ALTER TABLE Location 
+ALTER TABLE Location
     ADD CONSTRAINT Location_PK PRIMARY KEY ( Location_ID ) ;
 
-CREATE TABLE Magazine 
-    ( 
+CREATE TABLE Magazine
+    (
      Media_ID NUMBER  NOT NULL ,
-     Edition  VARCHAR2 (10)  NOT NULL 
-    ) 
+     Edition  VARCHAR2 (20)  NOT NULL
+    )
 ;
 
-ALTER TABLE Magazine 
+ALTER TABLE Magazine
     ADD CONSTRAINT Magazine_PK PRIMARY KEY ( Media_ID ) ;
 
-CREATE TABLE Media 
-    ( 
+CREATE TABLE Media
+    (
      Media_ID           NUMBER  NOT NULL ,
-     Title              VARCHAR2 (50) , 
-     Description        CLOB , 
-     Cover              BLOB , 
+     Title              VARCHAR2 (50) ,
+     Description        CLOB ,
+     Cover              BLOB ,
      FSK_FSK_ID         NUMBER  NOT NULL ,
      Library_Library_ID NUMBER  NOT NULL ,
-     Type_Type_ID       VARCHAR2 (8)  NOT NULL 
-    ) 
+     Type_Type_ID       VARCHAR2 (8)  NOT NULL
+    )
 ;
 
-ALTER TABLE Media 
+ALTER TABLE Media
     ADD CONSTRAINT Media_PK PRIMARY KEY ( Media_ID ) ;
 
-CREATE TABLE Media_Genre 
-    ( 
+CREATE TABLE Media_Genre
+    (
      Genres_Genre_ID NUMBER  NOT NULL ,
      Media_Media_ID  NUMBER  NOT NULL
-    ) 
+    )
 ;
 
-ALTER TABLE Media_Genre 
+ALTER TABLE Media_Genre
     ADD CONSTRAINT Media_Genre_PK PRIMARY KEY ( Genres_Genre_ID, Media_Media_ID ) ;
 
-CREATE TABLE Movie 
-    ( 
+CREATE TABLE Movie
+    (
      Media_ID NUMBER  NOT NULL ,
-     Format   VARCHAR2 (10)  NOT NULL , 
-     Runtime  DATE  NOT NULL 
-    ) 
+     Format   VARCHAR2 (10)  NOT NULL ,
+     Runtime  DATE  NOT NULL
+    )
 ;
 
-ALTER TABLE Movie 
+ALTER TABLE Movie
     ADD CONSTRAINT Movie_PK PRIMARY KEY ( Media_ID ) ;
 
-CREATE TABLE Price 
-    ( 
-     Start_Date   DATE  NOT NULL , 
-     Price        NUMBER  NOT NULL , 
-     Type_Type_ID VARCHAR2 (8)  NOT NULL 
-    ) 
+CREATE TABLE Price
+    (
+     Start_Date   DATE  NOT NULL ,
+     Price        NUMBER  NOT NULL ,
+     Type_Type_ID VARCHAR2 (8)  NOT NULL
+    )
 ;
 
-ALTER TABLE Price 
+ALTER TABLE Price
     ADD CONSTRAINT Price_PK PRIMARY KEY ( Start_Date, Price ) ;
 
-CREATE TABLE Rental 
-    ( 
+CREATE TABLE Rental
+    (
      Rental_ID            NUMBER  NOT NULL ,
-     Start_Date           DATE  NOT NULL , 
-     End_Date             DATE  NOT NULL , 
+     Start_Date           DATE  NOT NULL ,
+     End_Date             DATE  NOT NULL ,
      Copy_Copy_ID         NUMBER  NOT NULL ,
      Copy_Media_ID        NUMBER  NOT NULL ,
      Customer_Customer_ID NUMBER  NOT NULL
-    ) 
+    )
 ;
 
-ALTER TABLE Rental 
+ALTER TABLE Rental
     ADD CONSTRAINT Rental_PK PRIMARY KEY ( Rental_ID ) ;
 
-CREATE TABLE Reservation 
-    ( 
+CREATE TABLE Reservation
+    (
      Reservation_ID         NUMBER  NOT NULL ,
      Media_Media_ID         NUMBER  NOT NULL ,
-     Reservation_Date       DATE  NOT NULL , 
-     Reservation_Start_Date DATE  NOT NULL , 
+     Reservation_Date       DATE  NOT NULL ,
+     Reservation_Start_Date DATE  NOT NULL ,
      Rental_Rental_ID       NUMBER  NOT NULL
-    ) 
+    )
 ;
-CREATE UNIQUE INDEX Reservation__IDX ON Reservation 
-    ( 
-     Rental_Rental_ID ASC 
-    ) 
+CREATE UNIQUE INDEX Reservation__IDX ON Reservation
+    (
+     Rental_Rental_ID ASC
+    )
 ;
 
-ALTER TABLE Reservation 
+ALTER TABLE Reservation
     ADD CONSTRAINT Reservation_PK PRIMARY KEY ( Reservation_ID ) ;
 
-CREATE TABLE Return 
-    ( 
+CREATE TABLE Return
+    (
      Return_ID        NUMBER  NOT NULL ,
-     Return_Date      DATE  NOT NULL , 
+     Return_Date      DATE  NOT NULL ,
      Rental_Rental_ID NUMBER  NOT NULL
-    ) 
+    )
 ;
-CREATE UNIQUE INDEX Return__IDX ON Return 
-    ( 
-     Rental_Rental_ID ASC 
-    ) 
+CREATE UNIQUE INDEX Return__IDX ON Return
+    (
+     Rental_Rental_ID ASC
+    )
 ;
 
-ALTER TABLE Return 
+ALTER TABLE Return
     ADD CONSTRAINT Return_PK PRIMARY KEY ( Return_ID ) ;
 
-CREATE TABLE Shelf 
-    ( 
+CREATE TABLE Shelf
+    (
      Shelf_ID           NUMBER  NOT NULL ,
      Library_Library_ID NUMBER  NOT NULL ,
      Genres_Genre_ID    NUMBER  NOT NULL
-    ) 
+    )
 ;
 
-ALTER TABLE Shelf 
+ALTER TABLE Shelf
     ADD CONSTRAINT Shelf_PK PRIMARY KEY ( Shelf_ID ) ;
 
-CREATE TABLE Type 
-    ( 
-     Type_ID VARCHAR2 (8)  NOT NULL 
-    ) 
+CREATE TABLE Type
+    (
+     Type_ID VARCHAR2 (8)  NOT NULL
+    )
 ;
 
-ALTER TABLE Type 
+ALTER TABLE Type
     ADD CONSTRAINT Type_PK PRIMARY KEY ( Type_ID ) ;
 
-ALTER TABLE Audio 
-    ADD CONSTRAINT Audio_Media_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Audio
+    ADD CONSTRAINT Audio_Media_FK FOREIGN KEY
+    (
      Media_ID
-    ) 
-    REFERENCES Media 
-    ( 
+    )
+    REFERENCES Media
+    (
      Media_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Book 
-    ADD CONSTRAINT Book_Media_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Book
+    ADD CONSTRAINT Book_Media_FK FOREIGN KEY
+    (
      Media_ID
-    ) 
-    REFERENCES Media 
-    ( 
+    )
+    REFERENCES Media
+    (
      Media_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Copy 
-    ADD CONSTRAINT Copy_Media_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Copy
+    ADD CONSTRAINT Copy_Media_FK FOREIGN KEY
+    (
      Media_Media_ID
-    ) 
-    REFERENCES Media 
-    ( 
+    )
+    REFERENCES Media
+    (
      Media_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Library 
-    ADD CONSTRAINT Library_Location_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Library
+    ADD CONSTRAINT Library_Location_FK FOREIGN KEY
+    (
      Location_Location_ID
-    ) 
-    REFERENCES Location 
-    ( 
+    )
+    REFERENCES Location
+    (
      Location_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Location 
-    ADD CONSTRAINT Location_Country_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Location
+    ADD CONSTRAINT Location_Country_FK FOREIGN KEY
+    (
      Country_Country_ID
-    ) 
-    REFERENCES Country 
-    ( 
+    )
+    REFERENCES Country
+    (
      Country_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Magazine 
-    ADD CONSTRAINT Magazine_Media_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Magazine
+    ADD CONSTRAINT Magazine_Media_FK FOREIGN KEY
+    (
      Media_ID
-    ) 
-    REFERENCES Media 
-    ( 
+    )
+    REFERENCES Media
+    (
      Media_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Media 
-    ADD CONSTRAINT Media_FSK_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Media
+    ADD CONSTRAINT Media_FSK_FK FOREIGN KEY
+    (
      FSK_FSK_ID
-    ) 
-    REFERENCES FSK 
-    ( 
+    )
+    REFERENCES FSK
+    (
      FSK_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Media_Genre 
-    ADD CONSTRAINT Media_Genre_Genres_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Media_Genre
+    ADD CONSTRAINT Media_Genre_Genres_FK FOREIGN KEY
+    (
      Genres_Genre_ID
-    ) 
-    REFERENCES Genres 
-    ( 
+    )
+    REFERENCES Genres
+    (
      Genre_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Media_Genre 
-    ADD CONSTRAINT Media_Genre_Media_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Media_Genre
+    ADD CONSTRAINT Media_Genre_Media_FK FOREIGN KEY
+    (
      Media_Media_ID
-    ) 
-    REFERENCES Media 
-    ( 
+    )
+    REFERENCES Media
+    (
      Media_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Media 
-    ADD CONSTRAINT Media_Library_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Media
+    ADD CONSTRAINT Media_Library_FK FOREIGN KEY
+    (
      Library_Library_ID
-    ) 
-    REFERENCES Library 
-    ( 
+    )
+    REFERENCES Library
+    (
      Library_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Media 
-    ADD CONSTRAINT Media_Type_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Media
+    ADD CONSTRAINT Media_Type_FK FOREIGN KEY
+    (
      Type_Type_ID
-    ) 
-    REFERENCES Type 
-    ( 
+    )
+    REFERENCES Type
+    (
      Type_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Movie 
-    ADD CONSTRAINT Movie_Media_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Movie
+    ADD CONSTRAINT Movie_Media_FK FOREIGN KEY
+    (
      Media_ID
-    ) 
-    REFERENCES Media 
-    ( 
+    )
+    REFERENCES Media
+    (
      Media_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Price 
-    ADD CONSTRAINT Price_Type_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Price
+    ADD CONSTRAINT Price_Type_FK FOREIGN KEY
+    (
      Type_Type_ID
-    ) 
-    REFERENCES Type 
-    ( 
+    )
+    REFERENCES Type
+    (
      Type_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Rental 
-    ADD CONSTRAINT Rental_Copy_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Rental
+    ADD CONSTRAINT Rental_Copy_FK FOREIGN KEY
+    (
      Copy_Copy_ID,
      Copy_Media_ID
-    ) 
-    REFERENCES Copy 
-    ( 
+    )
+    REFERENCES Copy
+    (
      Copy_ID,
      Media_Media_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Rental 
-    ADD CONSTRAINT Rental_Customer_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Rental
+    ADD CONSTRAINT Rental_Customer_FK FOREIGN KEY
+    (
      Customer_Customer_ID
-    ) 
-    REFERENCES Customer 
-    ( 
+    )
+    REFERENCES Customer
+    (
      Customer_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Reservation 
-    ADD CONSTRAINT Reservation_Media_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Reservation
+    ADD CONSTRAINT Reservation_Media_FK FOREIGN KEY
+    (
      Media_Media_ID
-    ) 
-    REFERENCES Media 
-    ( 
+    )
+    REFERENCES Media
+    (
      Media_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Reservation 
-    ADD CONSTRAINT Reservation_Rental_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Reservation
+    ADD CONSTRAINT Reservation_Rental_FK FOREIGN KEY
+    (
      Rental_Rental_ID
-    ) 
-    REFERENCES Rental 
-    ( 
+    )
+    REFERENCES Rental
+    (
      Rental_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Return 
-    ADD CONSTRAINT Return_Rental_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Return
+    ADD CONSTRAINT Return_Rental_FK FOREIGN KEY
+    (
      Rental_Rental_ID
-    ) 
-    REFERENCES Rental 
-    ( 
+    )
+    REFERENCES Rental
+    (
      Rental_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Shelf 
-    ADD CONSTRAINT Shelf_Genres_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Shelf
+    ADD CONSTRAINT Shelf_Genres_FK FOREIGN KEY
+    (
      Genres_Genre_ID
-    ) 
-    REFERENCES Genres 
-    ( 
+    )
+    REFERENCES Genres
+    (
      Genre_ID
-    ) 
+    )
 ;
 
-ALTER TABLE Shelf 
-    ADD CONSTRAINT Shelf_Library_FK FOREIGN KEY 
-    ( 
+ALTER TABLE Shelf
+    ADD CONSTRAINT Shelf_Library_FK FOREIGN KEY
+    (
      Library_Library_ID
-    ) 
-    REFERENCES Library 
-    ( 
+    )
+    REFERENCES Library
+    (
      Library_ID
-    ) 
+    )
 ;
 
---  ERROR: No Discriminator Column found in Arc FKArc_1 - constraint trigger for Arc cannot be generated 
+--  ERROR: No Discriminator Column found in Arc FKArc_1 - constraint trigger for Arc cannot be generated
 
---  ERROR: No Discriminator Column found in Arc FKArc_1 - constraint trigger for Arc cannot be generated 
+--  ERROR: No Discriminator Column found in Arc FKArc_1 - constraint trigger for Arc cannot be generated
 
---  ERROR: No Discriminator Column found in Arc FKArc_1 - constraint trigger for Arc cannot be generated 
+--  ERROR: No Discriminator Column found in Arc FKArc_1 - constraint trigger for Arc cannot be generated
 
 --  ERROR: No Discriminator Column found in Arc FKArc_1 - constraint trigger for Arc cannot be generated
 
 
 
--- Zusammenfassungsbericht für Oracle SQL Developer Data Modeler: 
--- 
+-- Zusammenfassungsbericht für Oracle SQL Developer Data Modeler:
+--
 -- CREATE TABLE                            19
 -- CREATE INDEX                             2
 -- ALTER TABLE                             39
@@ -499,16 +499,16 @@ ALTER TABLE Shelf
 -- CREATE SYNONYM                           0
 -- CREATE TABLESPACE                        0
 -- CREATE USER                              0
--- 
+--
 -- DROP TABLESPACE                          0
 -- DROP DATABASE                            0
--- 
+--
 -- REDACTION POLICY                         0
 -- TSDP POLICY                              0
--- 
+--
 -- ORDS DROP SCHEMA                         0
 -- ORDS ENABLE SCHEMA                       0
 -- ORDS ENABLE OBJECT                       0
--- 
+--
 -- ERRORS                                   4
 -- WARNINGS                                 0
