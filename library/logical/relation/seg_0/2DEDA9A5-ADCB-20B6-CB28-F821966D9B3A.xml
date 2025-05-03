@@ -1,18 +1,18 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Media_Copy" directorySegmentName="seg_0" id="89BB64A7-C956-435B-E1F6-253A45E2CEF4">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Shelf_Copy" directorySegmentName="seg_0" id="2DEDA9A5-ADCB-20B6-CB28-F821966D9B3A">
 <createdBy>maker</createdBy>
-<createdTime>2025-03-21 23:48:53 UTC</createdTime>
+<createdTime>2025-05-03 15:05:55 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
 <item key="3260D476-5520-7A7C-C486-B6946B595FCF" value="true"/>
 <item key="BF5267CE-C478-8A58-123B-DD8384111830" value="true"/>
 </engineerTo>
-<sourcePk>15EF7138-F7A1-2E91-6B74-D4DD70EC8F4E</sourcePk>
-<identifying>true</identifying>
+<sourcePk>975B8FDB-9149-54FF-5E93-8518BB577BFA</sourcePk>
+<identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>45E3A01D-3DF6-B406-9DA3-1C64BE560E0E</sourceEntity>
+<sourceEntity>61877F7A-2002-3B52-4622-E950AF037819</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
 <targetEntity>048E5B8C-A6B9-08CB-2FD9-12921F19884E</targetEntity>
 <transferable>true</transferable>
