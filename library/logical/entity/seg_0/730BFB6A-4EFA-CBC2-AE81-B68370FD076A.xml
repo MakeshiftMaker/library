@@ -4,8 +4,7 @@
 <createdTime>2025-03-19 11:16:15 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
-<item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
-<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
+<item key="73171901-9D1E-DB48-7523-4E68D8CB1BD8" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -22,8 +21,7 @@
 <createdTime>2025-03-20 17:35:23 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
-<item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
-<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
+<item key="73171901-9D1E-DB48-7523-4E68D8CB1BD8" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,19 +29,19 @@
 <dataTypeSize>22</dataTypeSize>
 <ownDataTypeParameters>22,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Author" id="D6AA910C-F979-BB5A-420E-1D9676BCCE31">
-<createdBy>Kerstin</createdBy>
-<createdTime>2025-03-20 17:58:45 UTC</createdTime>
+<Attribute name="Author" id="67D68C87-8126-FB09-9279-99F3F70B009D">
+<createdBy>maker</createdBy>
+<createdTime>2025-04-14 12:11:13 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
-<item key="2ACFAF4D-8B2B-7B45-9EBA-88098F2A37E4" value="true"/>
-<item key="5B662844-0702-CB62-0F0A-BCF2351DFB45" value="true"/>
+<item key="73171901-9D1E-DB48-7523-4E68D8CB1BD8" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>70</dataTypeSize>
-<ownDataTypeParameters>70,,</ownDataTypeParameters>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 </Entity>

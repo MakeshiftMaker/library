@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="90BB84B4-4D8F-DAA4-C504-7FD3F42A680A" name="Return">
+<createdBy>maker</createdBy>
+<createdTime>2025-04-14 12:12:19 UTC</createdTime>
+<generatorID>5BD72DC7-1B32-2D68-B4D3-A6C6CBE07D41</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Return_ID" id="00BFF15D-2685-75C7-A9A8-FCF216AEF5B8">
+<createdBy>maker</createdBy>
+<createdTime>2025-04-14 12:12:19 UTC</createdTime>
+<generatorID>354FBE8C-62D2-2CC6-7F8E-F0DD5FF3044F</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rental_Rental_ID" id="55AC5FC4-A2CF-6D04-26EE-6A4252C75699">
+<createdBy>maker</createdBy>
+<createdTime>2025-04-14 12:12:19 UTC</createdTime>
+<generatorID>4F455210-C79E-F6EE-7830-B93077CB4004</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E2452162-F1B9-5971-A70E-CA632235D91B" referredColumn="4168FB91-82D1-4E44-50DD-E5177031B23C"/>
+</associations>
+</Column>
+<Column name="Return_Date" id="EA55DA23-160B-14BC-E9AB-D4F5D1B72383">
+<createdBy>maker</createdBy>
+<createdTime>2025-04-14 12:12:19 UTC</createdTime>
+<generatorID>E6593F90-D7AA-8DD1-4957-E07B5B0A7FE6</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="24E431DD-B9A0-007F-6079-126175EABC7E" name="Return_PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-04-14 12:12:19 UTC</createdTime>
+<generatorID>40811B5C-1443-2ECC-EB95-4ED0B65AA50B</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00BFF15D-2685-75C7-A9A8-FCF216AEF5B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7839CDB0-1338-BEAA-5968-4B40B7E25C80" name="Return__IDX">
+<createdBy>maker</createdBy>
+<createdTime>2025-04-14 12:12:19 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4A44E5BF-8FDC-7F39-8159-F1DC892FE608</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="55AC5FC4-A2CF-6D04-26EE-6A4252C75699"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="199C1910-147D-CAB2-C253-445CFE44527F" name="Return_Rental_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-04-14 12:12:19 UTC</createdTime>
+<generatorID>4A44E5BF-8FDC-7F39-8159-F1DC892FE608</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55AC5FC4-A2CF-6D04-26EE-6A4252C75699"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
