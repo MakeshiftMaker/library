@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F172FE1C-6CFE-8ACA-C3B9-FE0C67C19E42" name="Media_PriceList">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:13:37 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Price_List_Type" id="1B68D071-40AF-A171-6607-084A2CBCCAB8">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:13:37 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="320BB745-2008-CB28-52F9-529251C3E14F" referredColumn="F24B449C-C922-EB2A-1FD7-46A9140013C7"/>
+</associations>
+</Column>
+<Column name="Price_List_Start_Date" id="B2368E04-8933-74A9-6ACB-566D1D0B4F0C">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:13:37 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="320BB745-2008-CB28-52F9-529251C3E14F" referredColumn="F271FDAA-8742-A540-ECD6-307F4CC98E9F"/>
+</associations>
+</Column>
+<Column name="Media_Media_ID" id="E31727A0-C456-56E6-4D37-25BCF6124B51">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:13:37 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5AFB78FA-7A32-2842-7EC0-006F2A0D5D7B" referredColumn="62AAD1EE-B022-138A-05CE-D890A172E79E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="56F78022-53C8-02A0-A7A7-EE5D7F1C01FD" name="Media_PriceList_PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:13:37 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B68D071-40AF-A171-6607-084A2CBCCAB8"/>
+<colUsage columnID="B2368E04-8933-74A9-6ACB-566D1D0B4F0C"/>
+<colUsage columnID="E31727A0-C456-56E6-4D37-25BCF6124B51"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D24EA451-2895-3BD3-DF56-753290B1DB1B" name="Media_PriceList_Price_List_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:13:37 UTC</createdTime>
+<generatorID>BB3A7A8E-8E4F-4805-D4E3-60111B5A6B06</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B68D071-40AF-A171-6607-084A2CBCCAB8"/>
+<colUsage columnID="B2368E04-8933-74A9-6ACB-566D1D0B4F0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="556BA57F-A7F5-8EC5-46CF-318910796D4C" name="Media_PriceList_Media_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:13:37 UTC</createdTime>
+<generatorID>BB3A7A8E-8E4F-4805-D4E3-60111B5A6B06</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E31727A0-C456-56E6-4D37-25BCF6124B51"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

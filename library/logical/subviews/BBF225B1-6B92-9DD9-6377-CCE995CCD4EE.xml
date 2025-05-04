@@ -18,6 +18,10 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="808" y="353" width="109" height="117"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="0CAD2C28-C398-7666-BE3C-8872487C637B" otype="Entity" vid="5C089A26-3E3D-19B1-0483-CF6E812F6C72">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="310" y="180" width="115" height="92"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="1E55223C-0CA9-FA79-2BD0-FCB35FDCA19F" otype="Entity" vid="E8F51791-E3EC-DD33-C66B-AB292E9E2437">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="813" y="0" width="77" height="75"/>
@@ -184,10 +188,19 @@ With the information from Type and Genre we can calculate the price of any permu
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="397" y="472"/>
-<point x="397" y="721"/>
-<point x="1168" y="714"/>
-<point x="1168" y="455"/>
+<point x="396" y="472"/>
+<point x="396" y="723"/>
+<point x="1167" y="716"/>
+<point x="1167" y="455"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="A5C29A94-0DB8-2D62-40B9-92A89A6BD755" otype="Relation" vid_source="5C089A26-3E3D-19B1-0483-CF6E812F6C72" vid_target="4CCF96DF-193F-5E16-892A-430989F802AB">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="425" y="244"/>
+<point x="570" y="244"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVInheritanceRelation" oid="AC0C9953-0009-D9C8-7DC2-078A061077AB" otype="Hierarchy relation" vid_source="9017D5D5-236D-A126-16BE-3F362CAC4C3E" vid_target="EEC5448A-B64E-FC5F-9498-D722134698B4">

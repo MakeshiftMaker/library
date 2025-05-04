@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="500B4699-3AE0-9CEC-67DF-147B8D54F84E" name="Reservation">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:13:37 UTC</createdTime>
+<generatorID>ECE6E1F8-3E45-409B-AC52-9C23C1F2984B</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Reservation_ID" id="F74EFF5C-5160-5BF2-FAF8-AD02D6AA3A0E">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:13:37 UTC</createdTime>
+<generatorID>E4CD341E-EBD8-21C0-3FF5-A3ABFDB8DF07</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Media_Media_ID" id="1175A1FD-7DC6-FECF-010F-ACA66E481F7B">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:13:37 UTC</createdTime>
+<comment><![CDATA[Exemplar Identifier]]></comment>
+<generatorID>D47812A5-EF2F-0ADC-5D9A-71563D7BD69E</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="661C14AF-450B-99C8-5F47-75CEAEFA6AE1" referredColumn="62AAD1EE-B022-138A-05CE-D890A172E79E"/>
+</associations>
+</Column>
+<Column name="Reservation_Date" id="B530525D-8158-44A0-A06D-CBC41278E3C7">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:13:37 UTC</createdTime>
+<generatorID>0117FD9C-5EEC-9644-8FD4-49D31F0E62FA</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Reservation_Start_Date" id="0153ADAE-173D-BA0F-427E-27143AB85285">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:13:37 UTC</createdTime>
+<generatorID>B20E89AD-C3CC-DCA2-52B5-137F3DF3433F</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rental_Rental_ID" id="BF553D94-3935-2AE1-2C48-9DE0EDE7F3C2">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:13:37 UTC</createdTime>
+<generatorID>84FB425A-7499-443E-2529-31556D1D38D5</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="519CE666-F477-8168-EF23-CB4C1EF230F2" referredColumn="E54E5E67-406C-4750-9595-F88FEF6357BA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="20543512-90A8-372B-AE28-2E3D25F3D193" name="Reservation_PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:13:37 UTC</createdTime>
+<generatorID>A17AE4C0-98B3-5CBA-AECA-7C08FF508C8F</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F74EFF5C-5160-5BF2-FAF8-AD02D6AA3A0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68831BEB-D8A9-E1A5-8FBF-16D141C01A52" name="Reservation__IDX">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:13:37 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>974C9ADD-BDB9-0F4C-2F03-52AFCCC0AE25</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="BF553D94-3935-2AE1-2C48-9DE0EDE7F3C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35FDA824-957F-97BA-15E3-2A5FFCFACE8E" name="Reservation_Media_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:13:37 UTC</createdTime>
+<generatorID>6CC9E7CA-8C9A-91F7-997E-507DAE0C4CAE</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1175A1FD-7DC6-FECF-010F-ACA66E481F7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4D135582-2418-0212-BD07-038E2808EDE3" name="Reservation_Rental_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:13:37 UTC</createdTime>
+<generatorID>974C9ADD-BDB9-0F4C-2F03-52AFCCC0AE25</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF553D94-3935-2AE1-2C48-9DE0EDE7F3C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
