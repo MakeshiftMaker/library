@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="48AD8589-9785-B2DF-9104-93A7CD1DD93F" name="Magazine">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>A5A68AB7-63C9-9028-FBC9-107AD90A7D4A</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Media_ID" id="88C5D5C9-9612-BF00-23CC-6EA5A3DEA06C">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<comment><![CDATA[Exemplar Identifier]]></comment>
+<generatorID>BB549652-0799-F6F5-B13E-F539A84A9882</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE9BE310-55EC-E9C5-F90B-06E9F7B2084F" referredColumn="13A54163-C969-A898-DAF6-EECEA8FB75C9"/>
+</associations>
+</Column>
+<Column name="Edition" id="23A16C34-B69C-0070-9AF6-CDA35527213C">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>A36EF1C5-99B7-87C1-1864-29EAC751B96B</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7852F443-CD98-EABC-BFEF-34DBE2DE9553" name="Magazine_PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>15EF7138-F7A1-2E91-6B74-D4DD70EC8F4E</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88C5D5C9-9612-BF00-23CC-6EA5A3DEA06C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E078A0FE-30C6-CC37-FB08-3383C92D0BBB" name="Magazine_Media_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>1FBB4F43-4B42-1931-D1D7-7D57FF6BA381</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88C5D5C9-9612-BF00-23CC-6EA5A3DEA06C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -4,7 +4,7 @@
 <createdTime>2025-05-03 15:09:51 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
-<item key="550EFF44-80C4-7213-87B3-A44ECCD2AF67" value="true"/>
+<item key="82492E7F-2CCA-5627-DF6C-451620CED698" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,12 +15,24 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Author_ID" id="860C8A75-DFD0-3D67-ABC7-781E871F76A2">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-03 15:10:59 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<engineerTo>
+<item key="82492E7F-2CCA-5627-DF6C-451620CED698" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="Name" id="98D1C4F5-6383-052F-3EDF-093647F3152A">
 <createdBy>maker</createdBy>
 <createdTime>2025-05-03 15:10:11 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
-<item key="550EFF44-80C4-7213-87B3-A44ECCD2AF67" value="true"/>
+<item key="82492E7F-2CCA-5627-DF6C-451620CED698" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -29,18 +41,19 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Author_ID" id="860C8A75-DFD0-3D67-ABC7-781E871F76A2">
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="77031401-E534-84C6-E72D-6AFBD33BCB7D" name="Author PK">
 <createdBy>maker</createdBy>
-<createdTime>2025-05-03 15:10:59 UTC</createdTime>
+<createdTime>2025-05-10 12:14:03 UTC</createdTime>
 <ownerDesignName>library</ownerDesignName>
 <engineerTo>
-<item key="550EFF44-80C4-7213-87B3-A44ECCD2AF67" value="true"/>
+<item key="82492E7F-2CCA-5627-DF6C-451620CED698" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-</attributes>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>860C8A75-DFD0-3D67-ABC7-781E871F76A2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

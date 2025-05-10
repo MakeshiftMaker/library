@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4B9E90FE-231D-4A2A-6E0D-AA8083A5B9AD" name="Copy">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>048E5B8C-A6B9-08CB-2FD9-12921F19884E</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Media_Media_ID" id="036C699E-32DD-0499-D5C7-E8CC7413910A">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<comment><![CDATA[Exemplar Identifier]]></comment>
+<generatorID>A6DC2C88-0E95-21A8-865E-BC02D9EAB948</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7CECD14D-EB24-1CDC-4034-5D19E6B8156A" referredColumn="13A54163-C969-A898-DAF6-EECEA8FB75C9"/>
+</associations>
+</Column>
+<Column name="Copy_ID" id="974444E5-B7DE-07FC-E68C-91648037A0F8">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>96D665A1-C73C-64FC-5CB1-E0C6C5D347F5</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Shelf_Shelf_ID" id="10FC9C15-7D64-221A-A69C-F768D26198A1">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>B7404827-4CB0-9E39-155C-EF2534E04CF0</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A138F4CE-5E7B-DC9B-AC2F-CD12731DD231" referredColumn="EBF3D7BB-E26D-9339-6AC1-36940433772D"/>
+</associations>
+</Column>
+<Column name="Available" id="F6B277C9-F581-A38E-D902-0F9E663A99CE">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>E8F1768D-FC2C-6A01-A50F-9CBBCE7AF548</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Condition" id="D15B056A-5A64-E626-1D46-4D2FF5F32DDF">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>B976BD37-6D18-7EDA-D45E-DDC277C67AB3</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Barcode" id="5D37C6F9-514F-6350-88EE-76D503CE5799">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>B8EC1FAD-0D98-CDE3-B6FB-4BAB6ECDDB58</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FA659470-4E0B-1A48-F7B9-A878088A356F" name="Copy_PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>139FAC3F-684D-CBCB-F7EB-0A4879A79B9B</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="974444E5-B7DE-07FC-E68C-91648037A0F8"/>
+<colUsage columnID="036C699E-32DD-0499-D5C7-E8CC7413910A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C5A38D51-6851-EFFA-46C8-44F0564E037F" name="Copy_Media_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>89BB64A7-C956-435B-E1F6-253A45E2CEF4</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="036C699E-32DD-0499-D5C7-E8CC7413910A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9692C51-4D24-76BD-D1DD-622099E8D266" name="Copy_Shelf_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>2DEDA9A5-ADCB-20B6-CB28-F821966D9B3A</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10FC9C15-7D64-221A-A69C-F768D26198A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

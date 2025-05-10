@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED4A905E-7E3F-4078-7D8C-8FC4A9D13AA5" name="Book_Author">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Author_Author_ID" id="40A627D8-6445-DE78-4903-8783AC3BF3F5">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB904D0E-57A7-79F6-D0A6-D1838B1CD5BD" referredColumn="B101E5F2-E7EB-63F6-A81A-214672536148"/>
+</associations>
+</Column>
+<Column name="Book_Media_ID" id="58F5D337-D149-D40C-B5D5-5B055A1F4680">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="67DE4165-4909-4AF1-02A4-7C73CC634AEB" referredColumn="B7468677-848A-51C1-C94F-7AC857413BF0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="37BF92EC-7E89-0391-A705-E8F83C247F66" name="Book_Author_PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40A627D8-6445-DE78-4903-8783AC3BF3F5"/>
+<colUsage columnID="58F5D337-D149-D40C-B5D5-5B055A1F4680"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA4D91F9-B307-9359-EB5B-8E0905302686" name="Book_Author_Author_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>A5C29A94-0DB8-2D62-40B9-92A89A6BD755</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40A627D8-6445-DE78-4903-8783AC3BF3F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F0F2A57-5286-5D25-799E-CE50DD2CB1CA" name="Book_Author_Book_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>A5C29A94-0DB8-2D62-40B9-92A89A6BD755</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58F5D337-D149-D40C-B5D5-5B055A1F4680"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

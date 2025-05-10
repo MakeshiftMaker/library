@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9E217356-F15C-2B42-456D-D5AE722DBB36" name="Shelf">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>61877F7A-2002-3B52-4622-E950AF037819</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Shelf_ID" id="EBF3D7BB-E26D-9339-6AC1-36940433772D">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>693080E0-93C2-A42D-AECB-5CEF38BFFFD0</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Library_Library_ID" id="AF86F73D-B199-3FF0-414B-561FF64F4EC1">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>F1A1CEDD-BC02-C191-3CBE-5C03CB48D4DB</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6583FDED-EBE9-F0F2-A325-D3C954F6F02A" referredColumn="04F6E8E6-4009-9CEA-4CF0-C106C0755C64"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D10E764C-6702-5DEE-A740-F6D1B95E72DD" name="Shelf_PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>975B8FDB-9149-54FF-5E93-8518BB577BFA</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBF3D7BB-E26D-9339-6AC1-36940433772D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E73E0BCD-1F52-8F94-ADBA-4FE3EFA82492" name="Shelf_Library_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>E4CC042F-9F58-567D-E513-62D1FCA3B5FF</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF86F73D-B199-3FF0-414B-561FF64F4EC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

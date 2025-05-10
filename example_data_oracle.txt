@@ -1,22 +1,22 @@
 -- FSK
-INSERT INTO FSK (FSK_ID, Rating) VALUES (1, 0);
-INSERT INTO FSK (FSK_ID, Rating) VALUES (2, 6);
-INSERT INTO FSK (FSK_ID, Rating) VALUES (3, 12);
-INSERT INTO FSK (FSK_ID, Rating) VALUES (4, 16);
-INSERT INTO FSK (FSK_ID, Rating) VALUES (5, 18);
+INSERT INTO FSK (Rating) VALUES (0);
+INSERT INTO FSK (Rating) VALUES (6);
+INSERT INTO FSK (Rating) VALUES (12);
+INSERT INTO FSK (Rating) VALUES (16);
+INSERT INTO FSK (Rating) VALUES (18);
 
 -- Country
-INSERT INTO Country (Country_ID, COUNTRY_NAME) VALUES (1, 'Austria');
-INSERT INTO Country (COUNTRY_ID, COUNTRY_NAME) VALUES (2, 'Germany');
-INSERT INTO Country (COUNTRY_ID, COUNTRY_NAME) VALUES (3, 'Switzerland');
+INSERT INTO Country (COUNTRY_NAME) VALUES ('Austria');
+INSERT INTO Country (COUNTRY_NAME) VALUES ('Germany');
+INSERT INTO Country (COUNTRY_NAME) VALUES ('Switzerland');
 
 -- Location
-INSERT INTO Location (LOCATION_ID, Country_Country_ID, LOCATION_NAME) VALUES (1, 1, 'FH-Salzburg');
-INSERT INTO Location (LOCATION_ID, Country_Country_ID, LOCATION_NAME) VALUES (2, 1, 'Lehen');
+INSERT INTO Location (Country_Country_ID, LOCATION_NAME) VALUES (1, 'FH-Salzburg');
+INSERT INTO Location (Country_Country_ID, LOCATION_NAME) VALUES (1, 'Lehen');
 
 -- Library
-INSERT INTO Library (LIBRARY_ID, Location_Location_ID, LIBRARY_NAME) VALUES (1, 1, 'Wolfgang Gmachl Bibliothek');
-INSERT INTO Library (LIBRARY_ID, Location_Location_ID, LIBRARY_NAME) VALUES (2, 2, 'Stadtbibliothek Salzburg');
+INSERT INTO Library (Location_Location_ID, LIBRARY_NAME) VALUES (1, 'Wolfgang Gmachl Bibliothek');
+INSERT INTO Library (Location_Location_ID, LIBRARY_NAME) VALUES (2, 'Stadtbibliothek Salzburg');
 
 -- Type
 INSERT INTO Type VALUES ('Book');
@@ -25,85 +25,107 @@ INSERT INTO Type VALUES ('Magazine');
 INSERT INTO Type VALUES ('Audio');
 
 -- Price
-INSERT INTO Price VALUES (TO_DATE('2025-01-01', 'YYYY-MM-DD'), 0.40, 'Book');
-INSERT INTO Price VALUES (TO_DATE('2025-03-01', 'YYYY-MM-DD'), 0.20, 'Book');
-INSERT INTO Price VALUES (TO_DATE('2025-04-01', 'YYYY-MM-DD'), 0.60, 'Book');
-INSERT INTO Price VALUES (TO_DATE('2025-01-01', 'YYYY-MM-DD'), 0.20, 'Magazine');
-INSERT INTO Price VALUES (TO_DATE('2025-02-01', 'YYYY-MM-DD'), 0.20, 'Movie');
-INSERT INTO Price VALUES (TO_DATE('2025-03-01', 'YYYY-MM-DD'), 0.30, 'Movie');
-INSERT INTO Price VALUES (TO_DATE('2025-04-01', 'YYYY-MM-DD'), 0.10, 'Movie');
-INSERT INTO Price VALUES (TO_DATE('2025-01-01', 'YYYY-MM-DD'), 0.30, 'Audio');
-INSERT INTO Price VALUES (TO_DATE('2025-04-01', 'YYYY-MM-DD'), 0.80, 'Audio');
+INSERT INTO Price (Type_Type_ID, Start_Date, Price) VALUES ('Book', TO_DATE('2025-01-01', 'YYYY-MM-DD'), 0.40);
+INSERT INTO Price (Type_Type_ID, Start_Date, Price) VALUES ('Book', TO_DATE('2025-03-01', 'YYYY-MM-DD'), 0.20);
+INSERT INTO Price (Type_Type_ID, Start_Date, Price) VALUES ('Book', TO_DATE('2025-04-01', 'YYYY-MM-DD'), 0.60);
+INSERT INTO Price (Type_Type_ID, Start_Date, Price) VALUES ('Magazine', TO_DATE('2025-01-01', 'YYYY-MM-DD'), 0.20);
+INSERT INTO Price (Type_Type_ID, Start_Date, Price) VALUES ('Movie', TO_DATE('2025-02-01', 'YYYY-MM-DD'), 0.20);
+INSERT INTO Price (Type_Type_ID, Start_Date, Price) VALUES ('Movie', TO_DATE('2025-03-01', 'YYYY-MM-DD'), 0.30);
+INSERT INTO Price (Type_Type_ID, Start_Date, Price) VALUES ('Movie', TO_DATE('2025-04-01', 'YYYY-MM-DD'), 0.10);
+INSERT INTO Price (Type_Type_ID, Start_Date, Price) VALUES ('Audio', TO_DATE('2025-01-01', 'YYYY-MM-DD'), 0.30);
+INSERT INTO Price (Type_Type_ID, Start_Date, Price) VALUES ('Audio', TO_DATE('2025-04-01', 'YYYY-MM-DD'), 0.80);
 
 -- Media
-INSERT INTO Media (MEDIA_ID, TITLE, DESCRIPTION, Cover, FSK_FSK_ID, Library_Library_ID, Type_Type_ID)
-VALUES (1, 'Dark Side of the Moon Redux', 'The Dark Side of the Moon Redux is an album by the English musician Roger Waters', NULL, 1, 1, 'Audio');
+INSERT INTO Media (Type_Type_ID, FSK_FSK_ID, Library_Library_ID, Title, Description, Cover)
+VALUES ('Audio', 1, 1, 'Dark Side of the Moon Redux', 'The Dark Side of the Moon Redux is an album by the English musician Roger Waters', NULL);
 
-INSERT INTO Media (MEDIA_ID, TITLE, DESCRIPTION, Cover, FSK_FSK_ID, Library_Library_ID, Type_Type_ID)
-VALUES (2, 'The Hobbit', 'Big feet', NULL, 2, 1, 'Book');
+INSERT INTO Media (Type_Type_ID, FSK_FSK_ID, Library_Library_ID, Title, Description, Cover)
+VALUES ('Book', 2, 1, 'The Hobbit', 'Big feet', NULL);
 
-INSERT INTO Media (MEDIA_ID, TITLE, DESCRIPTION, Cover, FSK_FSK_ID, Library_Library_ID, Type_Type_ID)
-VALUES (3, 'The Hobbit', 'Big feet in 24 fps', NULL, 2, 1, 'Movie');
+INSERT INTO Media (Type_Type_ID, FSK_FSK_ID, Library_Library_ID, Title, Description, Cover)
+VALUES ('Movie', 2, 1, 'The Hobbit', 'Big feet in 24 fps', NULL);
 
-INSERT INTO Media (MEDIA_ID, TITLE, DESCRIPTION, Cover, FSK_FSK_ID, Library_Library_ID, Type_Type_ID)
-VALUES (4, 'Julia Extra', 'Verbotene Nacht mit dem Mountain-Daddy', NULL, 5, 1, 'Magazine');
+INSERT INTO Media (Type_Type_ID, FSK_FSK_ID, Library_Library_ID, Title, Description, Cover)
+VALUES ('Magazine', 5, 1, 'Julia Extra', 'Verbotene Nacht mit dem Mountain-Daddy', NULL);
 
 -- Genres
-INSERT INTO Genres (GENRE_ID, Genre, Surcharge) VALUES (1, 'Romance', 1.00);
-INSERT INTO Genres (GENRE_ID, Genre, Surcharge) VALUES (2, 'Fantasy', 0.40);
-INSERT INTO Genres (GENRE_ID, Genre, Surcharge) VALUES (3, 'Adventure', 0.10);
-INSERT INTO Genres (GENRE_ID, Genre, Surcharge) VALUES (4, 'Spoken-Word', 0.30);
+INSERT INTO Genres (Genre, Surcharge) VALUES ('Romance', 1.00);
+INSERT INTO Genres (Genre, Surcharge) VALUES ('Fantasy', 0.40);
+INSERT INTO Genres (Genre, Surcharge) VALUES ('Adventure', 0.10);
+INSERT INTO Genres (Genre, Surcharge) VALUES ('Spoken-Word', 0.30);
 
 -- Media_Genre
-INSERT INTO Media_Genre VALUES (2, 2);
-INSERT INTO Media_Genre VALUES (3, 2);
-INSERT INTO Media_Genre VALUES (2, 3);
-INSERT INTO Media_Genre VALUES (3, 3);
-INSERT INTO Media_Genre VALUES (4, 1);
-INSERT INTO Media_Genre VALUES (1, 4);
+INSERT INTO Media_Genre (Genres_Genre_ID, Media_Media_ID) VALUES (2, 2);
+INSERT INTO Media_Genre (Genres_Genre_ID, Media_Media_ID) VALUES (3, 2);
+INSERT INTO Media_Genre (Genres_Genre_ID, Media_Media_ID) VALUES (2, 3);
+INSERT INTO Media_Genre (Genres_Genre_ID, Media_Media_ID) VALUES (3, 3);
+INSERT INTO Media_Genre (Genres_Genre_ID, Media_Media_ID) VALUES (4, 1);
+INSERT INTO Media_Genre (Genres_Genre_ID, Media_Media_ID) VALUES (1, 4);
 
 -- Shelf
-INSERT INTO Shelf VALUES (1, 1, 1);
-INSERT INTO Shelf VALUES (2, 1, 2);
-INSERT INTO Shelf VALUES (3, 1, 3);
-INSERT INTO Shelf VALUES (4, 1, 4);
+INSERT INTO Shelf (Library_Library_ID) VALUES (1);
+INSERT INTO Shelf (Library_Library_ID) VALUES (1);
+INSERT INTO Shelf (Library_Library_ID) VALUES (1);
+INSERT INTO Shelf (Library_Library_ID) VALUES (1);
 
 -- Magazine
 INSERT INTO Magazine (Media_ID, Edition) VALUES (4, 'first edition');
 
 -- Book
-INSERT INTO Book (MEDIA_ID, ISBN, AUTHOR) VALUES (2, '9783608987492', 'John Ronald Reuel Tolkien');
+INSERT INTO Book (MEDIA_ID, ISBN) VALUES (2, '9783608987492');
 
 -- Movie
-INSERT INTO Movie (MEDIA_ID, FORMAT, Runtime) VALUES (3, 'DVD', '02:28:00');
+INSERT INTO Movie (MEDIA_ID, FORMAT, Runtime_s) VALUES (3, 'DVD', 8880);
 
 -- Audio
-INSERT INTO Audio (MEDIA_ID, Codec, Runtime) VALUES (1, 'FLAC', '01:34:22');
+INSERT INTO Audio (MEDIA_ID, Codec, Runtime_s) VALUES (1, 'FLAC', 5662);
 
 -- Copy
-INSERT INTO Copy VALUES (1, 1, 1, 'Good', '00001');
-INSERT INTO Copy VALUES (2, 1, 1, 'Good', '00002');
-INSERT INTO Copy VALUES (3, 1, 0, 'Perfect', '00003');
-INSERT INTO Copy VALUES (1, 2, 1, 'Fair', '00004');
-INSERT INTO Copy VALUES (2, 2, 1, 'Bad', '00005');
-INSERT INTO Copy VALUES (1, 3, 0, 'Perfect', '00006');
-INSERT INTO Copy VALUES (1, 4, 0, 'Divine', '00007');
+INSERT INTO Copy (Media_Media_ID, Copy_ID, Shelf_Shelf_ID, Available, Condition, Barcode)
+VALUES (1, 1, 2, '1', 'Good', '00001');
+
+INSERT INTO Copy (Media_Media_ID, Copy_ID, Shelf_Shelf_ID, Available, Condition, Barcode)
+VALUES (2, 1, 1, '1', 'Good', '00002');
+
+INSERT INTO Copy (Media_Media_ID, Copy_ID, Shelf_Shelf_ID, Available, Condition, Barcode)
+VALUES (3, 1, 3, '0', 'Perfect', '00003');
+
+INSERT INTO Copy (Media_Media_ID, Copy_ID, Shelf_Shelf_ID, Available, Condition, Barcode)
+VALUES (1, 2, 4, '1', 'Fair', '00004');
+
+INSERT INTO Copy (Media_Media_ID, Copy_ID, Shelf_Shelf_ID, Available, Condition, Barcode)
+VALUES (2, 2, 1, '0', 'Bad', '00005');
+
+INSERT INTO Copy (Media_Media_ID, Copy_ID, Shelf_Shelf_ID, Available, Condition, Barcode)
+VALUES (1, 3, 2, '1', 'Perfect', '00006');
+
+INSERT INTO Copy (Media_Media_ID, Copy_ID, Shelf_Shelf_ID, Available, Condition, Barcode)
+VALUES (1, 4, 3, '1', 'Divine', '00007');
+
 
 -- Customer
-INSERT INTO Customer VALUES (1, 'Til', 'Naumann', 'fhs51256@fh-salzburg.ac.at', '123456789', 'AB+', TO_DATE('2003-02-23', 'YYYY-MM-DD'));
-INSERT INTO Customer VALUES (2, 'Maria', 'Franek', 'fhs51228@fh-salzburg.ac.at', '123456789', 'B-', TO_DATE('2003-10-31', 'YYYY-MM-DD'));
-INSERT INTO Customer VALUES (3, 'Kerstin', 'Heitzmann', 'fhs51247@fh-salzburg.ac.at', '987654321', 'AB', TO_DATE('2001-10-10', 'YYYY-MM-DD'));
+INSERT INTO Customer (FirstName, LastName, Mail, Phone, Blood_Type, Birth_Date)
+VALUES ('Til', 'Naumann', 'fhs51256@fh-salzburg.ac.at', '123456789', 'AB+', TO_DATE('2003-02-23', 'YYYY-MM-DD'));
+
+INSERT INTO Customer (FirstName, LastName, Mail, Phone, Blood_Type, Birth_Date)
+VALUES ('Maria', 'Franek', 'fhs51228@fh-salzburg.ac.at', '123456789', 'B-', TO_DATE('2003-10-31', 'YYYY-MM-DD'));
+
+INSERT INTO Customer (FirstName, LastName, Mail, Phone, Blood_Type, Birth_Date)
+VALUES ('Kerstin', 'Heitzmann', 'fhs51247@fh-salzburg.ac.at', '987654321', 'AB', TO_DATE('2001-10-10', 'YYYY-MM-DD'));
 
 -- Rental
-INSERT INTO Rental VALUES (1, TO_DATE('2025-01-01', 'YYYY-MM-DD'), TO_DATE('2025-01-31', 'YYYY-MM-DD'), 3, 1, 1);
-INSERT INTO Rental VALUES (2, TO_DATE('2025-02-01', 'YYYY-MM-DD'), TO_DATE('2025-02-15', 'YYYY-MM-DD'), 1, 3, 2);
-INSERT INTO Rental VALUES (3, TO_DATE('2025-03-05', 'YYYY-MM-DD'), TO_DATE('2025-03-15', 'YYYY-MM-DD'), 1, 4, 3);
-INSERT INTO Rental VALUES (4, TO_DATE('2025-05-01', 'YYYY-MM-DD'), TO_DATE('2025-05-15', 'YYYY-MM-DD'), 1, 2, 2);
+INSERT INTO Rental (Copy_Media_ID, Copy_Copy_ID, Customer_Customer_ID, Start_Date, End_Date, Return_Date)
+VALUES (1, 3, 1, TO_DATE('2025-01-01', 'YYYY-MM-DD'), TO_DATE('2025-01-31', 'YYYY-MM-DD'), TO_DATE('2025-02-10', 'YYYY-MM-DD'));
 
--- Return
-INSERT INTO Return VALUES (1, TO_DATE('2025-01-29', 'YYYY-MM-DD'), 1);
-INSERT INTO Return VALUES (2, TO_DATE('2025-02-18', 'YYYY-MM-DD'), 2);
+INSERT INTO Rental (Copy_Media_ID, Copy_Copy_ID, Customer_Customer_ID, Start_Date, End_Date, Return_Date)
+VALUES (3, 1, 2, TO_DATE('2025-02-01', 'YYYY-MM-DD'), TO_DATE('2025-02-15', 'YYYY-MM-DD'), TO_DATE('2025-02-20', 'YYYY-MM-DD'));
+
+INSERT INTO Rental (Copy_Media_ID, Copy_Copy_ID, Customer_Customer_ID, Start_Date, End_Date, Return_Date)
+VALUES (4, 1, 3, TO_DATE('2025-03-05', 'YYYY-MM-DD'), TO_DATE('2025-03-15', 'YYYY-MM-DD'), NULL);
+
+INSERT INTO Rental (Copy_Media_ID, Copy_Copy_ID, Customer_Customer_ID, Start_Date, End_Date, Return_Date)
+VALUES (2, 1, 2, TO_DATE('2025-05-01', 'YYYY-MM-DD'), TO_DATE('2025-05-15', 'YYYY-MM-DD'), NULL);
 
 -- Reservation
-INSERT INTO Reservation VALUES (1, 2, TO_DATE('2025-01-01', 'YYYY-MM-DD'), TO_DATE('2025-05-01', 'YYYY-MM-DD'), 4);
-
+INSERT INTO Reservation (Media_Media_ID, Rental_Rental_ID, Reservation_Date, Reservation_Start_Date)
+VALUES (2, 4, TO_DATE('2025-01-01', 'YYYY-MM-DD'), TO_DATE('2025-05-01', 'YYYY-MM-DD'));

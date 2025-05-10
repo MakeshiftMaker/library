@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8F70E019-5F38-8BEE-D1C8-5253236AC5FA" name="Rental">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>383D9ABD-3E38-B813-E6DA-9B06CCB4A0B8</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Rental_ID" id="71CDC238-9F70-A30F-AEAF-F0125571C1A5">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>F3ED9EEA-CA12-FA31-E0D6-3A8B74C23A80</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Copy_Media_ID" id="684AFD27-DDF3-9071-DCC6-D44E0E196764">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<comment><![CDATA[Exemplar Identifier]]></comment>
+<generatorID>81242677-6565-0FBA-CBC3-11A238AF8E9E</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B6A23D0-93BA-9D0D-C37C-2BAF1E9A90C2" referredColumn="036C699E-32DD-0499-D5C7-E8CC7413910A"/>
+</associations>
+</Column>
+<Column name="Copy_Copy_ID" id="DD1716F1-0E1E-F746-D13A-72610CC8339E">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>62C1AB02-C9B2-5CF8-5E66-649C56022E2A</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B6A23D0-93BA-9D0D-C37C-2BAF1E9A90C2" referredColumn="974444E5-B7DE-07FC-E68C-91648037A0F8"/>
+</associations>
+</Column>
+<Column name="Customer_Customer_ID" id="7B4B99C8-36AE-B586-B636-E0F306D87421">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>DBFAE767-4F8B-D688-7647-CF2200FE78D3</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BC6A45EE-7D08-9D77-F2DD-7CAB1D9F6A8E" referredColumn="9FD5E398-25CC-336C-3ACD-9AFD5AE2FEEF"/>
+</associations>
+</Column>
+<Column name="Start_Date" id="3131BF95-704C-F9AF-CF04-25216579D659">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>86BBFB1A-80A7-ECFD-D723-773CCE665F27</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="End_Date" id="8609E034-40A1-BAFA-0D7B-1E2793D39C51">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>A47C58C3-F6EC-5699-ABF8-420553820092</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Return_Date" id="C34676FD-A120-6761-A0A6-141275A6E8D9">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>EE099AF7-31E7-660E-3EF8-8448836D3856</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3883ED4C-476F-4216-C53A-2241EAC81495" name="Rental_PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>E394B29B-DCC5-B74E-7553-68C996AD2EBE</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71CDC238-9F70-A30F-AEAF-F0125571C1A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DBE7F230-DE5F-E966-2819-A48651216E3E" name="Rental_Copy_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>590355EB-1BD9-D8DB-F721-72F455A1A3AD</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD1716F1-0E1E-F746-D13A-72610CC8339E"/>
+<colUsage columnID="684AFD27-DDF3-9071-DCC6-D44E0E196764"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F48F4903-EBE5-3BA0-16AE-4E4CD57D3E44" name="Rental_Customer_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>B927163B-B42A-60E7-9382-CABEBB38D69A</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B4B99C8-36AE-B586-B636-E0F306D87421"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

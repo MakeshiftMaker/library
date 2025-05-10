@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="02EC3E89-3CAA-7EE0-CED7-B74BBDB528AF" containerWithKeyObject="50C94C8E-C63D-8950-E498-73DBE0A1B7EA" localFKIndex="FD8E0829-580D-34B8-8E01-E5560B75C776" name="Media_PriceList_Price_List_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>BB3A7A8E-8E4F-4805-D4E3-60111B5A6B06</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<referredTableLongName>Price_List</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B661CEEF-3A7F-948E-47B0-C4187BB72D07</referredTableID>
+<keyObject>3A5D55D6-C77C-79F2-A9ED-2FD5413633A6</keyObject>
+<referredKeyID>3A5D55D6-C77C-79F2-A9ED-2FD5413633A6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Type,Start_Date</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

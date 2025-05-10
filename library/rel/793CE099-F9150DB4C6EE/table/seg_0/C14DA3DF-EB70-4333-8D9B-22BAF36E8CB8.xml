@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C14DA3DF-EB70-4333-8D9B-22BAF36E8CB8" name="Library">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>6E15FCFE-1C71-E672-9034-C3B8B5907BEE</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Library_ID" id="04F6E8E6-4009-9CEA-4CF0-C106C0755C64">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>3AF4A3EF-9A35-89B0-6B05-01D7EB4AAFDC</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Location_Location_ID" id="87B8D78A-BE02-6833-18BE-37F6D4F8E173">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>D78B12A2-66F0-5FE4-2D8E-4F10BE85FEA0</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3C038B31-5123-761E-DA94-610EB7568F42" referredColumn="090A24FE-39F8-D7FF-875E-2819B7473587"/>
+</associations>
+</Column>
+<Column name="Library_Name" id="224D0391-7F6B-00F4-3EA0-1F05E0398EF7">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>2ABC19C4-24D9-FF53-CCA3-6AA0BAB8ADDB</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="07D72487-76F6-22F7-923C-C94A9DEAC855" name="Library_PK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>0A4634A3-7C23-C79B-D50D-017C4953725A</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04F6E8E6-4009-9CEA-4CF0-C106C0755C64"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="10F72796-6F33-2B2C-2852-9EEED1A680F5" name="Library_Location_FK">
+<createdBy>maker</createdBy>
+<createdTime>2025-05-10 12:26:15 UTC</createdTime>
+<generatorID>0BD6B0B8-2AA0-2ED7-B5FB-F78C3C69A1ED</generatorID>
+<ownerDesignName>library</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87B8D78A-BE02-6833-18BE-37F6D4F8E173"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
