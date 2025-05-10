@@ -1,0 +1,20 @@
+CREATE OR REPLACE PROCEDURE create_copy (
+    p_media_id       IN NUMBER,
+    p_copy_id        OUT NUMBER,
+    p_available      IN CHAR,
+    p_condition      IN VARCHAR2,
+    p_barcode        IN VARCHAR2
+) IS
+BEGIN
+    -- Insert a new copy for the given media
+    INSERT INTO Copy (Media_Media_ID, Copy_ID, Available, Condition, Barcode)
+    VALUES (
+        p_media_id,                           -- Use the media ID provided from the create_mediatype
+        SEQ_COPY_ID.NEXTVAL,                  -- Generate new Copy_ID using sequence
+        p_available,                          -- Available status (e.g., 'Y' for available)
+        p_condition,                          -- Condition of the copy (e.g., 'Good', 'Fair', etc.)
+        p_barcode                             -- Barcode for the copy
+    )
+    RETURNING Copy_ID INTO p_copy_id;         -- Return the generated Copy_ID
+END create_copy;
+/

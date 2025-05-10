@@ -1,0 +1,31 @@
+CREATE OR REPLACE PROCEDURE create_mediatype (
+    p_title           IN VARCHAR2,
+    p_description     IN VARCHAR2,
+    p_cover           IN BLOB,
+    p_type_id         IN VARCHAR2,
+    p_fsk_id          IN NUMBER,
+    p_library_id      IN NUMBER,
+    p_media_id        OUT NUMBER
+) IS
+BEGIN
+    BEGIN
+        -- Try to find existing media by title
+        SELECT Media_ID INTO p_media_id
+        FROM Media
+        WHERE Title = p_title;
+    EXCEPTION
+        WHEN NO_DATA_FOUND THEN
+            -- Insert new media and return the generated Media_ID
+            INSERT INTO Media (Title, Description, Cover, Type_Type_ID, FSK_FSK_ID, Library_Library_ID)
+            VALUES (
+                p_title,
+                p_description,
+                p_cover,  -- If you have a cover image, it can be inserted here as BLOB
+                p_type_id,   -- Media type ID (parameter)
+                p_fsk_id,    -- FSK ID (parameter)
+                p_library_id -- Library ID (parameter)
+            )
+            RETURNING Media_ID INTO p_media_id;  -- Captures the generated Media_ID
+    END;
+END create_mediatype;
+/

@@ -1,0 +1,61 @@
+CREATE OR REPLACE PROCEDURE Create_Reservation (
+    p_media_id      IN NUMBER,
+    p_customer_id   IN NUMBER,
+    p_start_date    IN DATE,
+    p_end_date      IN DATE,
+    p_copy_id       OUT NUMBER
+)
+IS
+    v_copy_id       NUMBER;
+    v_available     CHAR(1);
+BEGIN
+    -- Step 1: Check if there is an available copy for the requested time range
+    SELECT c.Copy_ID, c.Available
+    INTO v_copy_id, v_available
+    FROM Copy c
+    WHERE c.Media_Media_ID = p_media_id
+    AND c.Available = 'Y'
+    AND NOT EXISTS (
+        -- Check if the copy is already rented during the requested period
+        SELECT 1
+        FROM Rental r
+        WHERE r.Copy_Media_ID = c.Media_Media_ID
+        AND r.Copy_Copy_ID = c.Copy_ID
+        AND ((r.Start_Date BETWEEN p_start_date AND p_end_date)
+             OR (r.End_Date BETWEEN p_start_date AND p_end_date)
+             OR (p_start_date BETWEEN r.Start_Date AND r.End_Date)
+             OR (p_end_date BETWEEN r.Start_Date AND r.End_Date))
+    )
+    AND ROWNUM = 1;  -- We take only one available copy
+
+    -- Step 2: If an available copy is found, create a rental/reservation
+    IF v_copy_id IS NOT NULL AND v_available = 'Y' THEN
+        -- Insert the reservation into the Rental table
+        INSERT INTO Rental (
+            Copy_Media_ID,
+            Copy_Copy_ID,
+            Customer_Customer_ID,
+            Start_Date,
+            End_Date
+        ) VALUES (
+            p_media_id,
+            v_copy_id,
+            p_customer_id,
+            p_start_date,
+            p_end_date
+        );
+
+        -- Output the reserved Copy_ID
+        p_copy_id := v_copy_id;
+    ELSE
+        -- If no available copy found, raise an error
+        RAISE_APPLICATION_ERROR(-20001, 'No available copy for the selected time range.');
+    END IF;
+
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        RAISE_APPLICATION_ERROR(-20002, 'No available copy found for the media.');
+    WHEN OTHERS THEN
+        RAISE_APPLICATION_ERROR(-20003, 'An unexpected error occurred: ' || SQLERRM);
+END Create_Reservation;
+/

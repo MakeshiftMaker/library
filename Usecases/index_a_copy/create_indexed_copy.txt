@@ -1,0 +1,34 @@
+CREATE OR REPLACE PROCEDURE create_indexed_copy (
+    p_title           IN VARCHAR2,
+    p_description     IN VARCHAR2,
+    p_cover           IN BLOB,
+    p_type_id         IN VARCHAR2,
+    p_fsk_id          IN NUMBER,
+    p_library_id      IN NUMBER,
+    p_available       IN CHAR,
+    p_condition       IN VARCHAR2,
+    p_barcode         IN VARCHAR2,
+    p_media_id        OUT NUMBER,
+    p_copy_id         OUT NUMBER
+) IS
+BEGIN
+    -- Call the create_mediatype procedure to create or retrieve the media
+    create_mediatype(
+        p_title      => p_title,
+        p_description => p_description,
+        p_cover      => p_cover,
+        p_type_id    => p_type_id,
+        p_fsk_id     => p_fsk_id,
+        p_library_id => p_library_id,
+        p_media_id   => p_media_id
+    );
+
+    -- Call the create_copy procedure to create the copy
+    create_copy(
+        p_media_id   => p_media_id,
+        p_copy_id    => p_copy_id,
+        p_available  => p_available,
+        p_condition  => p_condition,
+        p_barcode    => p_barcode
+    );
+END create_indexed_copy;

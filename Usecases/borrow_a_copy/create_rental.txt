@@ -1,0 +1,20 @@
+CREATE OR REPLACE PROCEDURE create_user_account (
+    p_first_name IN VARCHAR2,
+    p_last_name IN VARCHAR2,
+    p_email IN VARCHAR2,
+    p_phone IN VARCHAR2,
+    p_blood_type IN VARCHAR2,
+    p_birth_date IN DATE,
+    p_user_id OUT NUMBER
+) AS
+BEGIN
+    -- Check if the user already exists
+    SELECT COUNT(*) INTO p_user_id FROM Customer WHERE Mail = p_email;
+
+    IF p_user_id = 0 THEN
+        -- Create the user if it does not exist
+        INSERT INTO Customer (FirstName, LastName, Mail, Phone, Blood_Type, Birth_Date)
+        VALUES (p_first_name, p_last_name, p_email, p_phone, p_blood_type, p_birth_date)
+        RETURNING Customer_ID INTO p_user_id; -- Return the generated Customer_ID
+    END IF;
+END create_user_account;

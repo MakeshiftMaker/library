@@ -1,0 +1,10 @@
+CREATE OR REPLACE PROCEDURE update_reservation (
+    p_reservation_id IN NUMBER,
+    p_rental_id IN NUMBER
+) AS
+BEGIN
+    -- Update the reservation with the rental information
+    UPDATE Reservation
+    SET Rental_Rental_ID = p_rental_id
+    WHERE Reservation_ID = p_reservation_id;
+END update_reservation;

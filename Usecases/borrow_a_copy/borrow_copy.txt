@@ -1,0 +1,32 @@
+CREATE OR REPLACE PROCEDURE borrow_copy (
+    p_first_name IN VARCHAR2,
+    p_last_name IN VARCHAR2,
+    p_email IN VARCHAR2,
+    p_phone IN VARCHAR2,
+    p_blood_type IN VARCHAR2,
+    p_birth_date IN DATE,
+    p_copy_id IN NUMBER,
+    p_reservation_id IN NUMBER,
+    p_start_date IN DATE,
+    p_end_date IN DATE,
+    p_rental_id OUT NUMBER
+) AS
+    v_user_id NUMBER;
+    v_existing_rental_id NUMBER;
+BEGIN
+    -- Step 1: Check if the user has an account
+    create_user_account(p_first_name, p_last_name, p_email, p_phone, p_blood_type, p_birth_date, v_user_id);
+
+    -- Step 2: Check if there is a reservation
+    IF p_reservation_id IS NOT NULL THEN
+        -- If a reservation exists, update the reservation with the rental ID
+        create_rental(p_copy_id, v_user_id, p_start_date, p_end_date, v_existing_rental_id);
+        update_reservation(p_reservation_id, v_existing_rental_id);
+    ELSE
+        -- If no reservation exists, simply create a new rental
+        create_rental(p_copy_id, v_user_id, p_start_date, p_end_date, p_rental_id);
+    END IF;
+    
+    -- Optionally, print out the rental ID (for debugging)
+    DBMS_OUTPUT.PUT_LINE('Rental Created with ID: ' || p_rental_id);
+END borrow_copy;
